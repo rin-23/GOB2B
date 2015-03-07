@@ -7,6 +7,7 @@
 //
 
 #import "StartupViewController.h"
+#import "InfoViewController.h"
 
 @interface StartupViewController ()
 
@@ -101,9 +102,20 @@
     sender.layer.borderColor = [UIColor grayColor].CGColor;
 }
 
--(void)infoButtonClicked:(UIButton*)sender {
-
+-(void)infoButtonClicked:(UIButton*)sender
+{
+    InfoViewController* infoVC = [[InfoViewController alloc] init];
+    UINavigationController* navVC = [[UINavigationController alloc] initWithRootViewController:infoVC];
+    navVC.navigationBarHidden = NO;
+    navVC.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+    [infoVC.navigationItem setRightBarButtonItem:[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(dismissInfoModalController:)]];
+    [self presentViewController:navVC animated:YES completion:nil];
 }
+
+-(void)dismissInfoModalController:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

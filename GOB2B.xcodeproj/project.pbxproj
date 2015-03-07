@@ -12,9 +12,16 @@
 		15531D2B1AAB089C009ADC38 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15531D2A1AAB089C009ADC38 /* Images.xcassets */; };
 		15531D451AAB0D9C009ADC38 /* StartupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15531D441AAB0D9C009ADC38 /* StartupViewController.m */; };
 		15531D7D1AAB166C009ADC38 /* Stairs.png in Resources */ = {isa = PBXBuildFile; fileRef = 15531D7C1AAB166C009ADC38 /* Stairs.png */; };
-		15531D7F1AAB1985009ADC38 /* GOB2BLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 15531D7E1AAB1985009ADC38 /* GOB2BLogo.png */; };
-		15531D811AAB1A14009ADC38 /* GOB2B Logo (white).png in Resources */ = {isa = PBXBuildFile; fileRef = 15531D801AAB1A14009ADC38 /* GOB2B Logo (white).png */; };
-		15531D841AABA945009ADC38 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15531D831AABA945009ADC38 /* InfoViewController.m */; };
+		15531D871AABACBC009ADC38 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15531D861AABACBC009ADC38 /* InfoViewController.m */; };
+		15531D911AABADC8009ADC38 /* GOB2B - Insights Graph.png in Resources */ = {isa = PBXBuildFile; fileRef = 15531D891AABADC8009ADC38 /* GOB2B - Insights Graph.png */; };
+		15531D921AABADC8009ADC38 /* GOB2B Logo (white).png in Resources */ = {isa = PBXBuildFile; fileRef = 15531D8A1AABADC8009ADC38 /* GOB2B Logo (white).png */; };
+		15531D931AABADC8009ADC38 /* GOB2B Logo 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 15531D8B1AABADC8009ADC38 /* GOB2B Logo 2.png */; };
+		15531D941AABADC8009ADC38 /* GOB2B Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 15531D8C1AABADC8009ADC38 /* GOB2B Logo.png */; };
+		15531D951AABADC8009ADC38 /* GOB2B Stairs LOGO 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 15531D8D1AABADC8009ADC38 /* GOB2B Stairs LOGO 2.png */; };
+		15531D961AABADC8009ADC38 /* GOB2B Stairs LOGO.png in Resources */ = {isa = PBXBuildFile; fileRef = 15531D8E1AABADC8009ADC38 /* GOB2B Stairs LOGO.png */; };
+		15531D971AABADC8009ADC38 /* Stairs Germany.png in Resources */ = {isa = PBXBuildFile; fileRef = 15531D8F1AABADC8009ADC38 /* Stairs Germany.png */; };
+		15531D9A1AABAE16009ADC38 /* GOB2B - Text.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 15531D991AABAE16009ADC38 /* GOB2B - Text.rtf */; };
+		15531D9F1AABB305009ADC38 /* Graph.png in Resources */ = {isa = PBXBuildFile; fileRef = 15531D9E1AABB305009ADC38 /* Graph.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,10 +34,17 @@
 		15531D431AAB0D9C009ADC38 /* StartupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartupViewController.h; sourceTree = "<group>"; };
 		15531D441AAB0D9C009ADC38 /* StartupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartupViewController.m; sourceTree = "<group>"; };
 		15531D7C1AAB166C009ADC38 /* Stairs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Stairs.png; sourceTree = "<group>"; };
-		15531D7E1AAB1985009ADC38 /* GOB2BLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GOB2BLogo.png; sourceTree = "<group>"; };
-		15531D801AAB1A14009ADC38 /* GOB2B Logo (white).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GOB2B Logo (white).png"; sourceTree = "<group>"; };
-		15531D821AABA945009ADC38 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
-		15531D831AABA945009ADC38 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		15531D851AABACBC009ADC38 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		15531D861AABACBC009ADC38 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		15531D891AABADC8009ADC38 /* GOB2B - Insights Graph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GOB2B - Insights Graph.png"; sourceTree = "<group>"; };
+		15531D8A1AABADC8009ADC38 /* GOB2B Logo (white).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GOB2B Logo (white).png"; sourceTree = "<group>"; };
+		15531D8B1AABADC8009ADC38 /* GOB2B Logo 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GOB2B Logo 2.png"; sourceTree = "<group>"; };
+		15531D8C1AABADC8009ADC38 /* GOB2B Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GOB2B Logo.png"; sourceTree = "<group>"; };
+		15531D8D1AABADC8009ADC38 /* GOB2B Stairs LOGO 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GOB2B Stairs LOGO 2.png"; sourceTree = "<group>"; };
+		15531D8E1AABADC8009ADC38 /* GOB2B Stairs LOGO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GOB2B Stairs LOGO.png"; sourceTree = "<group>"; };
+		15531D8F1AABADC8009ADC38 /* Stairs Germany.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Stairs Germany.png"; sourceTree = "<group>"; };
+		15531D991AABAE16009ADC38 /* GOB2B - Text.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "GOB2B - Text.rtf"; sourceTree = "<group>"; };
+		15531D9E1AABB305009ADC38 /* Graph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Graph.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,13 +77,12 @@
 		15531D1C1AAB089C009ADC38 /* GOB2B */ = {
 			isa = PBXGroup;
 			children = (
-				15531D801AAB1A14009ADC38 /* GOB2B Logo (white).png */,
-				15531D7E1AAB1985009ADC38 /* GOB2BLogo.png */,
+				15531D881AABADC8009ADC38 /* GOB2B Assest - Jason */,
 				15531D7C1AAB166C009ADC38 /* Stairs.png */,
 				15531D431AAB0D9C009ADC38 /* StartupViewController.h */,
 				15531D441AAB0D9C009ADC38 /* StartupViewController.m */,
-				15531D821AABA945009ADC38 /* InfoViewController.h */,
-				15531D831AABA945009ADC38 /* InfoViewController.m */,
+				15531D851AABACBC009ADC38 /* InfoViewController.h */,
+				15531D861AABACBC009ADC38 /* InfoViewController.m */,
 				15531D211AAB089C009ADC38 /* AppDelegate.h */,
 				15531D221AAB089C009ADC38 /* AppDelegate.m */,
 				15531D2A1AAB089C009ADC38 /* Images.xcassets */,
@@ -85,6 +98,22 @@
 				15531D1F1AAB089C009ADC38 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		15531D881AABADC8009ADC38 /* GOB2B Assest - Jason */ = {
+			isa = PBXGroup;
+			children = (
+				15531D9E1AABB305009ADC38 /* Graph.png */,
+				15531D991AABAE16009ADC38 /* GOB2B - Text.rtf */,
+				15531D891AABADC8009ADC38 /* GOB2B - Insights Graph.png */,
+				15531D8A1AABADC8009ADC38 /* GOB2B Logo (white).png */,
+				15531D8B1AABADC8009ADC38 /* GOB2B Logo 2.png */,
+				15531D8C1AABADC8009ADC38 /* GOB2B Logo.png */,
+				15531D8D1AABADC8009ADC38 /* GOB2B Stairs LOGO 2.png */,
+				15531D8E1AABADC8009ADC38 /* GOB2B Stairs LOGO.png */,
+				15531D8F1AABADC8009ADC38 /* Stairs Germany.png */,
+			);
+			path = "GOB2B Assest - Jason";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,9 +174,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15531D811AAB1A14009ADC38 /* GOB2B Logo (white).png in Resources */,
-				15531D7F1AAB1985009ADC38 /* GOB2BLogo.png in Resources */,
+				15531D951AABADC8009ADC38 /* GOB2B Stairs LOGO 2.png in Resources */,
+				15531D921AABADC8009ADC38 /* GOB2B Logo (white).png in Resources */,
 				15531D2B1AAB089C009ADC38 /* Images.xcassets in Resources */,
+				15531D931AABADC8009ADC38 /* GOB2B Logo 2.png in Resources */,
+				15531D9A1AABAE16009ADC38 /* GOB2B - Text.rtf in Resources */,
+				15531D971AABADC8009ADC38 /* Stairs Germany.png in Resources */,
+				15531D9F1AABB305009ADC38 /* Graph.png in Resources */,
+				15531D911AABADC8009ADC38 /* GOB2B - Insights Graph.png in Resources */,
+				15531D961AABADC8009ADC38 /* GOB2B Stairs LOGO.png in Resources */,
+				15531D941AABADC8009ADC38 /* GOB2B Logo.png in Resources */,
 				15531D7D1AAB166C009ADC38 /* Stairs.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -161,7 +197,7 @@
 			files = (
 				15531D231AAB089C009ADC38 /* AppDelegate.m in Sources */,
 				15531D201AAB089C009ADC38 /* main.m in Sources */,
-				15531D841AABA945009ADC38 /* InfoViewController.m in Sources */,
+				15531D871AABACBC009ADC38 /* InfoViewController.m in Sources */,
 				15531D451AAB0D9C009ADC38 /* StartupViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
