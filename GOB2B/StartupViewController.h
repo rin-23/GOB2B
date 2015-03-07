@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  StartupViewController.h
 //  GOB2B
 //
 //  Created by Rinat Abdrashitov on 2015-03-07.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface StartupViewController : UIViewController
 
 @end
-

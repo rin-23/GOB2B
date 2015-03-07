@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#include "StartupViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    // Override point for customization after application launch.
+    StartupViewController* startup = [[StartupViewController alloc] init];
+    [startup.view setFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = startup;
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+
     return YES;
 }
 
