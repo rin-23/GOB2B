@@ -117,7 +117,13 @@
     [scrollView addSubview:textView5];
 
     
-    scrollView.contentSize = CGSizeMake(CGRectGetWidth(self.view.frame), CGRectGetMaxY(textView5.frame)+10);
+    UIImageView* rankingImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ranking.png"]];
+    rankingImageView.frame = CGRectMake(0, CGRectGetMaxY(textView5.frame)+10, self.view.frame.size.width, 620);
+
+    rankingImageView.contentMode = UIViewContentModeScaleAspectFit;
+    [scrollView addSubview:rankingImageView];
+    
+    scrollView.contentSize = CGSizeMake(CGRectGetWidth(self.view.frame), CGRectGetMaxY(rankingImageView.frame)+10);
 }
 
 - (void)didReceiveMemoryWarning {

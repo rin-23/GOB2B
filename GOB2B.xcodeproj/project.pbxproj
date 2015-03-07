@@ -22,6 +22,7 @@
 		15531D971AABADC8009ADC38 /* Stairs Germany.png in Resources */ = {isa = PBXBuildFile; fileRef = 15531D8F1AABADC8009ADC38 /* Stairs Germany.png */; };
 		15531D9A1AABAE16009ADC38 /* GOB2B - Text.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 15531D991AABAE16009ADC38 /* GOB2B - Text.rtf */; };
 		15531D9F1AABB305009ADC38 /* Graph.png in Resources */ = {isa = PBXBuildFile; fileRef = 15531D9E1AABB305009ADC38 /* Graph.png */; };
+		1567A6581AABB8720046B26C /* ranking.png in Resources */ = {isa = PBXBuildFile; fileRef = 1567A6571AABB8720046B26C /* ranking.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		15531D8F1AABADC8009ADC38 /* Stairs Germany.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Stairs Germany.png"; sourceTree = "<group>"; };
 		15531D991AABAE16009ADC38 /* GOB2B - Text.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "GOB2B - Text.rtf"; sourceTree = "<group>"; };
 		15531D9E1AABB305009ADC38 /* Graph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Graph.png; sourceTree = "<group>"; };
+		1567A6571AABB8720046B26C /* ranking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ranking.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		15531D881AABADC8009ADC38 /* GOB2B Assest - Jason */ = {
 			isa = PBXGroup;
 			children = (
+				1567A6571AABB8720046B26C /* ranking.png */,
 				15531D9E1AABB305009ADC38 /* Graph.png */,
 				15531D991AABAE16009ADC38 /* GOB2B - Text.rtf */,
 				15531D891AABADC8009ADC38 /* GOB2B - Insights Graph.png */,
@@ -182,6 +185,7 @@
 				15531D971AABADC8009ADC38 /* Stairs Germany.png in Resources */,
 				15531D9F1AABB305009ADC38 /* Graph.png in Resources */,
 				15531D911AABADC8009ADC38 /* GOB2B - Insights Graph.png in Resources */,
+				1567A6581AABB8720046B26C /* ranking.png in Resources */,
 				15531D961AABADC8009ADC38 /* GOB2B Stairs LOGO.png in Resources */,
 				15531D941AABADC8009ADC38 /* GOB2B Logo.png in Resources */,
 				15531D7D1AAB166C009ADC38 /* Stairs.png in Resources */,
