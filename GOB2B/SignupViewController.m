@@ -8,6 +8,7 @@
 
 #import "SignupViewController.h"
 #import "GOUITextFiled.h"
+#import "OrganizationalViewController.h"
 
 @interface SignupViewController () {
     UIScrollView* scrollView;
@@ -249,13 +250,13 @@
     
     UIButton* nextButton = [UIButton buttonWithType:UIButtonTypeCustom];
     nextButton.titleLabel.font = [UIFont systemFontOfSize:16.0f];
-    [nextButton setTitle:@"Next" forState:UIControlStateNormal];
+    [nextButton setTitle:@"Sign Up" forState:UIControlStateNormal];
     
     [nextButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [nextButton setTitleColor:[UIColor grayColor] forState:UIControlStateHighlighted];
     [nextButton setTitleColor:[UIColor grayColor] forState:UIControlStateSelected];
     [nextButton setFrame:CGRectMake(0, 0, 130, 40)];
-    nextButton.center = CGPointMake(self.view.frame.size.width/4, CGRectGetMaxY(segLabel3.frame) + nextButton.frame.size.height/2 + 10);
+    nextButton.center = CGPointMake(self.view.frame.size.width/4, CGRectGetMaxY(segLabel3.frame) + nextButton.frame.size.height/2 + 40);
     nextButton.layer.borderColor = [UIColor whiteColor].CGColor;
     nextButton.layer.borderWidth = 2.0f;
     [nextButton addTarget:self action:@selector(nextButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
@@ -270,7 +271,7 @@
     [cancelButton setTitleColor:[UIColor grayColor] forState:UIControlStateHighlighted];
     [cancelButton setTitleColor:[UIColor grayColor] forState:UIControlStateSelected];
     [cancelButton setFrame:CGRectMake(0, 0, 130, 40)];
-    cancelButton.center = CGPointMake(self.view.frame.size.width*3/4, CGRectGetMaxY(segLabel3.frame) + cancelButton.frame.size.height/2 + 10);
+    cancelButton.center = CGPointMake(self.view.frame.size.width*3/4, CGRectGetMaxY(segLabel3.frame) + cancelButton.frame.size.height/2 + 40);
     cancelButton.layer.borderColor = [UIColor whiteColor].CGColor;
     cancelButton.layer.borderWidth = 2.0f;
     [cancelButton addTarget:self action:@selector(cancelButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
@@ -278,24 +279,26 @@
     [scrollView addSubview:cancelButton];
     
     scrollView.contentSize =  CGSizeMake(self.view.frame.size.width, CGRectGetMaxY(nextButton.frame)+20);
-    
-    
 }
 
 -(void)nextButtonClicked:(UIButton*)sender {
-    sender.layer.borderColor = [UIColor whiteColor].CGColor;
+//    sender.layer.borderColor = [UIColor whiteColor].CGColor;
+    OrganizationalViewController* org = [[OrganizationalViewController alloc] init];
+    [self.navigationController pushViewController:org animated:YES];
 }
 
 -(void)nextButtonClickedDown:(UIButton*)sender {
-    sender.layer.borderColor = [UIColor grayColor].CGColor;
+//    sender.layer.borderColor = [UIColor grayColor].CGColor;
 }
 
 -(void)cancelButtonClicked:(UIButton*)sender {
-    sender.layer.borderColor = [UIColor whiteColor].CGColor;
+//    sender.layer.borderColor = [UIColor whiteColor].CGColor;
+    [self.view endEditing:YES];
+    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
 }
 
 -(void)cancelButtonClickedDown:(UIButton*)sender {
-    sender.layer.borderColor = [UIColor grayColor].CGColor;
+//    sender.layer.borderColor = [UIColor grayColor].CGColor;
 }
 
 - (void)keyboardWillHide:(NSNotification *)n

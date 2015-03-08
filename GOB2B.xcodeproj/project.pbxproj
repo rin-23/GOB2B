@@ -25,6 +25,7 @@
 		1567A6581AABB8720046B26C /* ranking.png in Resources */ = {isa = PBXBuildFile; fileRef = 1567A6571AABB8720046B26C /* ranking.png */; };
 		1567A65B1AABBE370046B26C /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1567A65A1AABBE370046B26C /* SignupViewController.m */; };
 		1567A65E1AABC3AB0046B26C /* GOUITextFiled.m in Sources */ = {isa = PBXBuildFile; fileRef = 1567A65D1AABC3AB0046B26C /* GOUITextFiled.m */; };
+		1567A6611AABE5D60046B26C /* OrganizationalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1567A6601AABE5D60046B26C /* OrganizationalViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,8 @@
 		1567A65A1AABBE370046B26C /* SignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignupViewController.m; sourceTree = "<group>"; };
 		1567A65C1AABC3AB0046B26C /* GOUITextFiled.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GOUITextFiled.h; sourceTree = "<group>"; };
 		1567A65D1AABC3AB0046B26C /* GOUITextFiled.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GOUITextFiled.m; sourceTree = "<group>"; };
+		1567A65F1AABE5D60046B26C /* OrganizationalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrganizationalViewController.h; sourceTree = "<group>"; };
+		1567A6601AABE5D60046B26C /* OrganizationalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrganizationalViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +90,10 @@
 			children = (
 				15531D881AABADC8009ADC38 /* GOB2B Assest - Jason */,
 				15531D7C1AAB166C009ADC38 /* Stairs.png */,
+				1567A6591AABBE370046B26C /* SignupViewController.h */,
+				1567A65A1AABBE370046B26C /* SignupViewController.m */,
+				1567A65C1AABC3AB0046B26C /* GOUITextFiled.h */,
+				1567A65D1AABC3AB0046B26C /* GOUITextFiled.m */,
 				15531D431AAB0D9C009ADC38 /* StartupViewController.h */,
 				15531D441AAB0D9C009ADC38 /* StartupViewController.m */,
 				15531D851AABACBC009ADC38 /* InfoViewController.h */,
@@ -95,10 +102,8 @@
 				15531D221AAB089C009ADC38 /* AppDelegate.m */,
 				15531D2A1AAB089C009ADC38 /* Images.xcassets */,
 				15531D1D1AAB089C009ADC38 /* Supporting Files */,
-				1567A6591AABBE370046B26C /* SignupViewController.h */,
-				1567A65A1AABBE370046B26C /* SignupViewController.m */,
-				1567A65C1AABC3AB0046B26C /* GOUITextFiled.h */,
-				1567A65D1AABC3AB0046B26C /* GOUITextFiled.m */,
+				1567A65F1AABE5D60046B26C /* OrganizationalViewController.h */,
+				1567A6601AABE5D60046B26C /* OrganizationalViewController.m */,
 			);
 			path = GOB2B;
 			sourceTree = "<group>";
@@ -209,6 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1567A6611AABE5D60046B26C /* OrganizationalViewController.m in Sources */,
 				15531D231AAB089C009ADC38 /* AppDelegate.m in Sources */,
 				15531D201AAB089C009ADC38 /* main.m in Sources */,
 				15531D871AABACBC009ADC38 /* InfoViewController.m in Sources */,

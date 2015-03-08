@@ -106,17 +106,17 @@
 
 -(void)beginButtonClicked:(UIButton*)sender
 {
-    sender.layer.borderColor = [UIColor whiteColor].CGColor;
+//    sender.layer.borderColor = [UIColor whiteColor].CGColor;
 }
 
 -(void)beginButtonClickedDown:(UIButton*)sender
 {
-    sender.layer.borderColor = [UIColor grayColor].CGColor;
+//    sender.layer.borderColor = [UIColor grayColor].CGColor;
 }
 
 -(void)signupButtonClicked:(UIButton*)sender
 {
-    sender.layer.borderColor = [UIColor whiteColor].CGColor;
+//    sender.layer.borderColor = [UIColor whiteColor].CGColor;
     SignupViewController* infoVC = [[SignupViewController alloc] init];
     UINavigationController* navVC = [[UINavigationController alloc] initWithRootViewController:infoVC];
     navVC.navigationBarHidden = YES;
@@ -127,16 +127,16 @@
 
 -(void)signupButtonClickedDown:(UIButton*)sender
 {
-    sender.layer.borderColor = [UIColor grayColor].CGColor;
+//    sender.layer.borderColor = [UIColor grayColor].CGColor;
 }
 
 -(void)viewButtonClicked:(UIButton*)sender
 {
-    sender.layer.borderColor = [UIColor whiteColor].CGColor;
+//    sender.layer.borderColor = [UIColor whiteColor].CGColor;
 }
 
 -(void)viewButtonClickedDown:(UIButton*)sender {
-    sender.layer.borderColor = [UIColor grayColor].CGColor;
+//    sender.layer.borderColor = [UIColor grayColor].CGColor;
 }
 
 -(void)infoButtonClicked:(UIButton*)sender
