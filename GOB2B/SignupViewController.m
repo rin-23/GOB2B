@@ -283,6 +283,7 @@
 
 -(void)nextButtonClicked:(UIButton*)sender {
 //    sender.layer.borderColor = [UIColor whiteColor].CGColor;
+    [self.view endEditing:YES];
     OrganizationalViewController* org = [[OrganizationalViewController alloc] init];
     [self.navigationController pushViewController:org animated:YES];
 }

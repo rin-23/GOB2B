@@ -145,7 +145,6 @@
 //    sender.layer.borderColor = [UIColor whiteColor].CGColor;
     [self.view endEditing:YES];
     [self.navigationController dismissViewControllerAnimated:YES completion:nil];
-
 }
 
 -(void)doneButtonClickedDown:(UIButton*)sender {
