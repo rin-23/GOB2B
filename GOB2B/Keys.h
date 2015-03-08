@@ -22,7 +22,7 @@
 
 //Organizational goals screen
 //Create key by adding goal number
-#define kKeyNumberOfGoal @"Number of Goals"
+#define kKeyNumberOfGoals @"Number of Goals"
 #define kKeyGoal @"Goal Statement"
 #define kKeyKnowReasons @"Known reasons why"
 #define kDifficutly @"Difficulty to Accomplish"

@@ -264,7 +264,6 @@
     nextButton.layer.borderColor = [UIColor whiteColor].CGColor;
     nextButton.layer.borderWidth = 2.0f;
     [nextButton addTarget:self action:@selector(nextButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
-    [nextButton addTarget:self action:@selector(nextButtonClickedDown:) forControlEvents:UIControlEventTouchDown];
     [scrollView addSubview:nextButton];
     
     UIButton* cancelButton = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -279,7 +278,6 @@
     cancelButton.layer.borderColor = [UIColor whiteColor].CGColor;
     cancelButton.layer.borderWidth = 2.0f;
     [cancelButton addTarget:self action:@selector(cancelButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
-    [cancelButton addTarget:self action:@selector(cancelButtonClickedDown:) forControlEvents:UIControlEventTouchDown];
     [scrollView addSubview:cancelButton];
     
     //plus Stage
@@ -293,23 +291,23 @@
     [self.view endEditing:YES];
     self.view.userInteractionEnabled = NO;
     NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
-
-    for (int i = 0; i < fields.count; ++i)
-    {
-        UITextField* textField = fields[i];
-        NSString* key = keys[i];
-        if ([key isEqualToString:kKeyDetails]) {
-            //ignore details field
-            continue;
-        }
-        
-        if ([textField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]].length == 0)
-        {
-            self.view.userInteractionEnabled = YES;
-            [[[UIAlertView alloc] initWithTitle:nil message:@"Some information is missing" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
-            return;
-        }
-    }
+//
+//    for (int i = 0; i < fields.count; ++i)
+//    {
+//        UITextField* textField = fields[i];
+//        NSString* key = keys[i];
+//        if ([key isEqualToString:kKeyDetails]) {
+//            //ignore details field
+//            continue;
+//        }
+//        
+//        if ([textField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]].length == 0)
+//        {
+//            self.view.userInteractionEnabled = YES;
+//            [[[UIAlertView alloc] initWithTitle:nil message:@"Some information is missing" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
+//            return;
+//        }
+//    }
 
     
     for (int i = 0; i < keys.count; ++i)
@@ -326,23 +324,15 @@
         NSLog(@"[ERROR] Didnt save data");
         [[[UIAlertView alloc] initWithTitle:@"Error" message:@"Couldnt save data" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
     }
-    
+
+    self.view.userInteractionEnabled = YES;
     OrganizationalViewController* org = [[OrganizationalViewController alloc] init];
     [self.navigationController pushViewController:org animated:YES];
 }
 
--(void)nextButtonClickedDown:(UIButton*)sender {
-//    sender.layer.borderColor = [UIColor grayColor].CGColor;
-}
-
 -(void)cancelButtonClicked:(UIButton*)sender {
-//    sender.layer.borderColor = [UIColor whiteColor].CGColor;
     [self.view endEditing:YES];
     [self.navigationController dismissViewControllerAnimated:YES completion:nil];
-}
-
--(void)cancelButtonClickedDown:(UIButton*)sender {
-//    sender.layer.borderColor = [UIColor grayColor].CGColor;
 }
 
 - (void)keyboardWillHide:(NSNotification *)n

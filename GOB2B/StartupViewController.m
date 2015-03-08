@@ -98,7 +98,6 @@
     [viewButton addTarget:self action:@selector(viewButtonClickedDown:) forControlEvents:UIControlEventTouchDown];
     [self.view addSubview:viewButton];
     
-    
     UIButton* infoButton = [UIButton buttonWithType:UIButtonTypeInfoLight];
     [infoButton setFrame:CGRectMake(0,0,30,30)];
     infoButton.center = CGPointMake(30, self.view.frame.size.height -30);

@@ -7,10 +7,16 @@
 //
 
 #import "OrganizationalViewController.h"
+#include "Keys.h"
 
 @interface OrganizationalViewController () {
     UIScrollView* scrollView;
     BOOL keyboardIsShown;
+    
+    UITextView* textView1;
+    UITextView* textView2;
+    UISegmentedControl* segmentedControl1;
+    UISegmentedControl* segmentedControl2;
 }
 
 @end
@@ -51,7 +57,7 @@
     label1.textAlignment = NSTextAlignmentCenter;
     [scrollView addSubview:label1];
     
-    UITextView* textView1 = [[UITextView alloc] initWithFrame:CGRectMake(60, CGRectGetMaxY(label1.frame), self.view.frame.size.width-120, 100)];
+    textView1 = [[UITextView alloc] initWithFrame:CGRectMake(60, CGRectGetMaxY(label1.frame), self.view.frame.size.width-120, 100)];
     textView1.scrollEnabled = YES;
     textView1.layer.borderColor = [UIColor whiteColor].CGColor;
     textView1.layer.borderWidth = 2.0f;
@@ -66,7 +72,7 @@
     label2.textAlignment = NSTextAlignmentCenter;
     [scrollView addSubview:label2];
     
-    UITextView* textView2 = [[UITextView alloc] initWithFrame:CGRectMake(60, CGRectGetMaxY(label2.frame), self.view.frame.size.width-120, 100)];
+    textView2 = [[UITextView alloc] initWithFrame:CGRectMake(60, CGRectGetMaxY(label2.frame), self.view.frame.size.width-120, 100)];
     textView2.scrollEnabled = YES;
     textView2.font = [UIFont systemFontOfSize:14.0f];
     textView2.layer.borderColor = [UIColor whiteColor].CGColor;
@@ -81,7 +87,7 @@
     label3.textAlignment = NSTextAlignmentCenter;
     [scrollView addSubview:label3];
     
-    UISegmentedControl* segmentedControl1 = [[UISegmentedControl alloc] initWithItems:@[@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10"]];
+    segmentedControl1 = [[UISegmentedControl alloc] initWithItems:@[@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10"]];
     segmentedControl1.frame = CGRectMake(20, CGRectGetMaxY(label3.frame), self.view.frame.size.width - 40, 35);
     segmentedControl1.tintColor = [UIColor whiteColor];
     [segmentedControl1 setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor blackColor]} forState:UIControlStateNormal];
@@ -94,7 +100,7 @@
     label4.textAlignment = NSTextAlignmentCenter;
     [scrollView addSubview:label4];
     
-    UISegmentedControl* segmentedControl2 = [[UISegmentedControl alloc] initWithItems:@[@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10"]];
+    segmentedControl2 = [[UISegmentedControl alloc] initWithItems:@[@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10"]];
     segmentedControl2.frame = CGRectMake(20, CGRectGetMaxY(label4.frame), self.view.frame.size.width - 40, 35);
     segmentedControl2.tintColor = [UIColor whiteColor];
     [segmentedControl2 setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor blackColor]} forState:UIControlStateNormal];
@@ -112,7 +118,6 @@
     nextButton.layer.borderColor = [UIColor whiteColor].CGColor;
     nextButton.layer.borderWidth = 2.0f;
     [nextButton addTarget:self action:@selector(listAnotherButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
-    [nextButton addTarget:self action:@selector(listAnotherButtonClickedDown:) forControlEvents:UIControlEventTouchDown];
     [scrollView addSubview:nextButton];
     
     UIButton* cancelButton = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -127,28 +132,74 @@
     cancelButton.layer.borderColor = [UIColor whiteColor].CGColor;
     cancelButton.layer.borderWidth = 2.0f;
     [cancelButton addTarget:self action:@selector(doneButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
-    [cancelButton addTarget:self action:@selector(doneButtonClickedDown:) forControlEvents:UIControlEventTouchDown];
     [scrollView addSubview:cancelButton];
     
     scrollView.contentSize =  CGSizeMake(self.view.frame.size.width, CGRectGetMaxY(cancelButton.frame)+20);
 }
 
--(void)listAnotherButtonClicked:(UIButton*)sender {
-//    sender.layer.borderColor = [UIColor whiteColor].CGColor;
-}
+-(void)listAnotherButtonClicked:(UIButton*)sender
+{
+    NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
+    if (![defaults stringForKey:kKeyNumberOfGoals]) {
+        [defaults setInteger:0 forKey:kKeyNumberOfGoals];
+    }
+    
+    NSInteger keyIndex = [defaults integerForKey:kKeyNumberOfGoals] + 1;
+    [defaults setInteger:keyIndex forKey:kKeyNumberOfGoals];
 
--(void)listAnotherButtonClickedDown:(UIButton*)sender {
-//    sender.layer.borderColor = [UIColor grayColor].CGColor;
+    [defaults setObject:textView1.text forKey:[NSString stringWithFormat:@"%@%i", kKeyGoal, keyIndex]];
+    
+    [defaults setObject:textView2.text forKey:[NSString stringWithFormat:@"%@%i", kKeyKnowReasons, keyIndex]];
+    
+    NSString* value1 = [NSString stringWithFormat:@"%i", segmentedControl1.selectedSegmentIndex+1];
+    [defaults setObject:value1 forKey:[NSString stringWithFormat:@"%@%i", kDifficutly, keyIndex]];
+    
+    NSString* value2 = [NSString stringWithFormat:@"%i", segmentedControl2.selectedSegmentIndex+1];
+    [defaults setObject:value2 forKey:[NSString stringWithFormat:@"%@%i", kUrgency, keyIndex]];
+    
+    if (![defaults synchronize]) {
+        NSLog(@"[ERROR] Didnt save data");
+        [[[UIAlertView alloc] initWithTitle:@"Error" message:@"Couldnt save data" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
+    }
+    
+    textView1.text = @"";
+    textView2.text = @"";
+    segmentedControl1.selectedSegmentIndex = -1;
+    segmentedControl2.selectedSegmentIndex = -1;
+    
+    [[[UIAlertView alloc] initWithTitle:nil message:@"Goal saved" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
 }
 
 -(void)doneButtonClicked:(UIButton*)sender {
-//    sender.layer.borderColor = [UIColor whiteColor].CGColor;
     [self.view endEditing:YES];
-    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
-}
+    
+    NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
+    if (![defaults stringForKey:kKeyNumberOfGoals]) {
+        [defaults setInteger:0 forKey:kKeyNumberOfGoals];
+    }
+    
+    NSInteger keyIndex = [defaults integerForKey:kKeyNumberOfGoals] + 1;
+    [defaults setInteger:keyIndex forKey:kKeyNumberOfGoals];
+    
+    [defaults setObject:textView1.text forKey:[NSString stringWithFormat:@"%@%i", kKeyGoal, keyIndex]];
+    
+    [defaults setObject:textView2.text forKey:[NSString stringWithFormat:@"%@%i", kKeyKnowReasons, keyIndex]];
+    
+    NSString* value1 = [NSString stringWithFormat:@"%i", segmentedControl1.selectedSegmentIndex+1];
+    [defaults setObject:value1 forKey:[NSString stringWithFormat:@"%@%i", kDifficutly, keyIndex]];
 
--(void)doneButtonClickedDown:(UIButton*)sender {
-//    sender.layer.borderColor = [UIColor grayColor].CGColor;
+    NSString* value2 = [NSString stringWithFormat:@"%i", segmentedControl2.selectedSegmentIndex+1];
+    [defaults setObject:value2 forKey:[NSString stringWithFormat:@"%@%i", kUrgency, keyIndex]];
+    
+    //SINGUP IS DONE
+    [defaults setBool:TRUE forKey:kKeyDidSignup];
+    
+    if (![defaults synchronize]) {
+        NSLog(@"[ERROR] Didnt save data");
+        [[[UIAlertView alloc] initWithTitle:@"Error" message:@"Couldnt save data" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
+    }
+    
+    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
 }
 
 
