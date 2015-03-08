@@ -9,8 +9,13 @@
 #import "StartupViewController.h"
 #import "InfoViewController.h"
 #import "SignupViewController.h"
+#include "Keys.h"
 
-@interface StartupViewController () {
+@interface StartupViewController ()
+{
+    UIButton* signupButton;
+    UIButton* beginButton;
+    UIButton* viewButton;
 }
 
 @end
@@ -47,61 +52,75 @@
     textView.text = @"Basement to boardroom insight and analytics to take your company from early stage to fortune 500";
     [self.view addSubview:textView];
     
-    bool SIGNUP = TRUE;
+    signupButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    signupButton.titleLabel.font = [UIFont systemFontOfSize:22.0f];
+    [signupButton setTitle:@"Sign Up" forState:UIControlStateNormal];
     
-    if (SIGNUP) {
-        UIButton* signupButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        signupButton.titleLabel.font = [UIFont systemFontOfSize:22.0f];
-        [signupButton setTitle:@"Sign Up" forState:UIControlStateNormal];
-        
-        [signupButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        [signupButton setTitleColor:[UIColor grayColor] forState:UIControlStateHighlighted];
-        [signupButton setTitleColor:[UIColor grayColor] forState:UIControlStateSelected];
-        [signupButton setFrame:CGRectMake(0, 0, 150, 50)];
-        signupButton.center = CGPointMake(self.view.frame.size.width/2, CGRectGetMaxY(textView.frame) + signupButton.frame.size.height/2 + 10);
-        signupButton.layer.borderColor = [UIColor whiteColor].CGColor;
-        signupButton.layer.borderWidth = 2.0f;
-        [signupButton addTarget:self action:@selector(signupButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
-        [signupButton addTarget:self action:@selector(signupButtonClickedDown:) forControlEvents:UIControlEventTouchDown];
-        [self.view addSubview:signupButton];
-    } else {
-        UIButton* beginButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        beginButton.titleLabel.font = [UIFont systemFontOfSize:22.0f];
-        [beginButton setTitle:@"Begin" forState:UIControlStateNormal];
+    [signupButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [signupButton setTitleColor:[UIColor grayColor] forState:UIControlStateHighlighted];
+    [signupButton setTitleColor:[UIColor grayColor] forState:UIControlStateSelected];
+    [signupButton setFrame:CGRectMake(0, 0, 150, 50)];
+    signupButton.center = CGPointMake(self.view.frame.size.width/2, CGRectGetMaxY(textView.frame) + signupButton.frame.size.height/2 + 10);
+    signupButton.layer.borderColor = [UIColor whiteColor].CGColor;
+    signupButton.layer.borderWidth = 2.0f;
+    [signupButton addTarget:self action:@selector(signupButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
+    [signupButton addTarget:self action:@selector(signupButtonClickedDown:) forControlEvents:UIControlEventTouchDown];
+    [self.view addSubview:signupButton];
 
-        [beginButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        [beginButton setTitleColor:[UIColor grayColor] forState:UIControlStateHighlighted];
-        [beginButton setTitleColor:[UIColor grayColor] forState:UIControlStateSelected];
-        [beginButton setFrame:CGRectMake(0, 0, 150, 50)];
-        beginButton.center = CGPointMake(self.view.frame.size.width/2, CGRectGetMaxY(textView.frame) + beginButton.frame.size.height/2 + 10);
-        beginButton.layer.borderColor = [UIColor whiteColor].CGColor;
-        beginButton.layer.borderWidth = 2.0f;
-        [beginButton addTarget:self action:@selector(beginButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
-        [beginButton addTarget:self action:@selector(beginButtonClickedDown:) forControlEvents:UIControlEventTouchDown];
+    beginButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    beginButton.titleLabel.font = [UIFont systemFontOfSize:22.0f];
+    [beginButton setTitle:@"Begin" forState:UIControlStateNormal];
 
-        [self.view addSubview:beginButton];
-        
-        UIButton* viewButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        viewButton.titleLabel.font = [UIFont systemFontOfSize:22.0f];
-        [viewButton setTitle:@"View" forState:UIControlStateNormal];
-        
-        [viewButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        [viewButton setTitleColor:[UIColor grayColor] forState:UIControlStateHighlighted];
-        [viewButton setTitleColor:[UIColor grayColor] forState:UIControlStateSelected];
-        [viewButton setFrame:CGRectMake(0, 0, 150, 50)];
-        viewButton.center = CGPointMake(self.view.frame.size.width/2, CGRectGetMaxY(beginButton.frame) + viewButton.frame.size.height/2 + 14);
-        viewButton.layer.borderColor = [UIColor whiteColor].CGColor;
-        viewButton.layer.borderWidth = 2.0f;
-        [viewButton addTarget:self action:@selector(viewButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
-        [viewButton addTarget:self action:@selector(viewButtonClickedDown:) forControlEvents:UIControlEventTouchDown];
-        [self.view addSubview:viewButton];
-    }
+    [beginButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [beginButton setTitleColor:[UIColor grayColor] forState:UIControlStateHighlighted];
+    [beginButton setTitleColor:[UIColor grayColor] forState:UIControlStateSelected];
+    [beginButton setFrame:CGRectMake(0, 0, 150, 50)];
+    beginButton.center = CGPointMake(self.view.frame.size.width/2, CGRectGetMaxY(textView.frame) + beginButton.frame.size.height/2 + 10);
+    beginButton.layer.borderColor = [UIColor whiteColor].CGColor;
+    beginButton.layer.borderWidth = 2.0f;
+    [beginButton addTarget:self action:@selector(beginButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
+    [beginButton addTarget:self action:@selector(beginButtonClickedDown:) forControlEvents:UIControlEventTouchDown];
+
+    [self.view addSubview:beginButton];
+    
+    viewButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    viewButton.titleLabel.font = [UIFont systemFontOfSize:22.0f];
+    [viewButton setTitle:@"View" forState:UIControlStateNormal];
+    
+    [viewButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [viewButton setTitleColor:[UIColor grayColor] forState:UIControlStateHighlighted];
+    [viewButton setTitleColor:[UIColor grayColor] forState:UIControlStateSelected];
+    [viewButton setFrame:CGRectMake(0, 0, 150, 50)];
+    viewButton.center = CGPointMake(self.view.frame.size.width/2, CGRectGetMaxY(beginButton.frame) + viewButton.frame.size.height/2 + 14);
+    viewButton.layer.borderColor = [UIColor whiteColor].CGColor;
+    viewButton.layer.borderWidth = 2.0f;
+    [viewButton addTarget:self action:@selector(viewButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
+    [viewButton addTarget:self action:@selector(viewButtonClickedDown:) forControlEvents:UIControlEventTouchDown];
+    [self.view addSubview:viewButton];
+    
     
     UIButton* infoButton = [UIButton buttonWithType:UIButtonTypeInfoLight];
     [infoButton setFrame:CGRectMake(0,0,30,30)];
     infoButton.center = CGPointMake(30, self.view.frame.size.height -30);
     [infoButton addTarget:self action:@selector(infoButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:infoButton];
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
+    if (![defaults boolForKey:kKeyDidSignup])
+    {
+        signupButton.hidden = NO;
+        beginButton.hidden = YES;
+        viewButton.hidden = YES;
+    }
+    else
+    {
+        signupButton.hidden = YES;
+        beginButton.hidden = NO;
+        viewButton.hidden = NO;
+    }
 }
 
 -(void)beginButtonClicked:(UIButton*)sender

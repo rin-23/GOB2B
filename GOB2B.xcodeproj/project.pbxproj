@@ -56,6 +56,7 @@
 		1567A65D1AABC3AB0046B26C /* GOUITextFiled.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GOUITextFiled.m; sourceTree = "<group>"; };
 		1567A65F1AABE5D60046B26C /* OrganizationalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrganizationalViewController.h; sourceTree = "<group>"; };
 		1567A6601AABE5D60046B26C /* OrganizationalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrganizationalViewController.m; sourceTree = "<group>"; };
+		1567A6621AABF41C0046B26C /* Keys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Keys.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +91,8 @@
 			children = (
 				15531D881AABADC8009ADC38 /* GOB2B Assest - Jason */,
 				15531D7C1AAB166C009ADC38 /* Stairs.png */,
+				1567A65F1AABE5D60046B26C /* OrganizationalViewController.h */,
+				1567A6601AABE5D60046B26C /* OrganizationalViewController.m */,
 				1567A6591AABBE370046B26C /* SignupViewController.h */,
 				1567A65A1AABBE370046B26C /* SignupViewController.m */,
 				1567A65C1AABC3AB0046B26C /* GOUITextFiled.h */,
@@ -102,8 +105,7 @@
 				15531D221AAB089C009ADC38 /* AppDelegate.m */,
 				15531D2A1AAB089C009ADC38 /* Images.xcassets */,
 				15531D1D1AAB089C009ADC38 /* Supporting Files */,
-				1567A65F1AABE5D60046B26C /* OrganizationalViewController.h */,
-				1567A6601AABE5D60046B26C /* OrganizationalViewController.m */,
+				1567A6621AABF41C0046B26C /* Keys.h */,
 			);
 			path = GOB2B;
 			sourceTree = "<group>";

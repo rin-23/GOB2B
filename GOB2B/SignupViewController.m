@@ -9,7 +9,7 @@
 #import "SignupViewController.h"
 #import "GOUITextFiled.h"
 #import "OrganizationalViewController.h"
-
+#include "Keys.h"
 @interface SignupViewController () {
     UIScrollView* scrollView;
     BOOL keyboardIsShown;
@@ -30,7 +30,11 @@
     GOUITextFiled* field6;
     UIPickerView* filed6Picker;
     NSArray* filed6PickerData;
+    
+    UISegmentedControl* segmentedControl;
 
+    NSArray* fields;
+    NSArray* keys;
 }
 
 @end
@@ -211,14 +215,14 @@
     [scrollView addSubview:field6];
 
     UILabel* label7 = [[UILabel alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(field6.frame), CGRectGetWidth(self.view.frame), 45)];
-    label7.text = @"Role within Organization";
+    label7.text = @"Stage";
     label7.backgroundColor = [UIColor clearColor];
     label7.font = [UIFont systemFontOfSize:17.0f];
     label7.textAlignment = NSTextAlignmentCenter;
     [scrollView addSubview:label7];
 
     
-    UISegmentedControl* segmentedControl = [[UISegmentedControl alloc] initWithItems:@[@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10"]];
+    segmentedControl = [[UISegmentedControl alloc] initWithItems:@[@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10"]];
     segmentedControl.frame = CGRectMake(20, CGRectGetMaxY(label7.frame), self.view.frame.size.width - 40, 35);
     segmentedControl.tintColor = [UIColor whiteColor];
     [segmentedControl setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor blackColor]} forState:UIControlStateNormal];
@@ -278,12 +282,51 @@
     [cancelButton addTarget:self action:@selector(cancelButtonClickedDown:) forControlEvents:UIControlEventTouchDown];
     [scrollView addSubview:cancelButton];
     
+    //plus Stage
+    fields = @[field1,field2,field3,field4,field5,field6];
+    keys = @[kKeyVision, kKeyMission, kKeyIndustry, kKeyIncubated, kKeyDetails, kKeyRoleOrganization];
+    
     scrollView.contentSize =  CGSizeMake(self.view.frame.size.width, CGRectGetMaxY(nextButton.frame)+20);
 }
 
 -(void)nextButtonClicked:(UIButton*)sender {
-//    sender.layer.borderColor = [UIColor whiteColor].CGColor;
     [self.view endEditing:YES];
+    self.view.userInteractionEnabled = NO;
+    NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
+
+    for (int i = 0; i < fields.count; ++i)
+    {
+        UITextField* textField = fields[i];
+        NSString* key = keys[i];
+        if ([key isEqualToString:kKeyDetails]) {
+            //ignore details field
+            continue;
+        }
+        
+        if ([textField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]].length == 0)
+        {
+            self.view.userInteractionEnabled = YES;
+            [[[UIAlertView alloc] initWithTitle:nil message:@"Some information is missing" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
+            return;
+        }
+    }
+
+    
+    for (int i = 0; i < keys.count; ++i)
+    {
+        UITextField* textField = fields[i];
+        NSString* key = keys[i];
+        [defaults setObject:textField.text forKey:key];
+    }
+    
+    int index = [segmentedControl selectedSegmentIndex];
+    [defaults setObject:[NSString stringWithFormat:@"%i", index+1] forKey:kKeyStage];
+
+    if (![defaults synchronize]) {
+        NSLog(@"[ERROR] Didnt save data");
+        [[[UIAlertView alloc] initWithTitle:@"Error" message:@"Couldnt save data" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
+    }
+    
     OrganizationalViewController* org = [[OrganizationalViewController alloc] init];
     [self.navigationController pushViewController:org animated:YES];
 }
