@@ -115,7 +115,6 @@
     frame.size.height = textView5.contentSize.height;
     textView5.frame = frame;
     [scrollView addSubview:textView5];
-
     
     UIImageView* rankingImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ranking.png"]];
     rankingImageView.frame = CGRectMake(0, CGRectGetMaxY(textView5.frame)+10, self.view.frame.size.width, 620);

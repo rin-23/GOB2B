@@ -23,6 +23,8 @@
 		15531D9A1AABAE16009ADC38 /* GOB2B - Text.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 15531D991AABAE16009ADC38 /* GOB2B - Text.rtf */; };
 		15531D9F1AABB305009ADC38 /* Graph.png in Resources */ = {isa = PBXBuildFile; fileRef = 15531D9E1AABB305009ADC38 /* Graph.png */; };
 		1567A6581AABB8720046B26C /* ranking.png in Resources */ = {isa = PBXBuildFile; fileRef = 1567A6571AABB8720046B26C /* ranking.png */; };
+		1567A65B1AABBE370046B26C /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1567A65A1AABBE370046B26C /* SignupViewController.m */; };
+		1567A65E1AABC3AB0046B26C /* GOUITextFiled.m in Sources */ = {isa = PBXBuildFile; fileRef = 1567A65D1AABC3AB0046B26C /* GOUITextFiled.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,10 @@
 		15531D991AABAE16009ADC38 /* GOB2B - Text.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "GOB2B - Text.rtf"; sourceTree = "<group>"; };
 		15531D9E1AABB305009ADC38 /* Graph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Graph.png; sourceTree = "<group>"; };
 		1567A6571AABB8720046B26C /* ranking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ranking.png; sourceTree = "<group>"; };
+		1567A6591AABBE370046B26C /* SignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignupViewController.h; sourceTree = "<group>"; };
+		1567A65A1AABBE370046B26C /* SignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignupViewController.m; sourceTree = "<group>"; };
+		1567A65C1AABC3AB0046B26C /* GOUITextFiled.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GOUITextFiled.h; sourceTree = "<group>"; };
+		1567A65D1AABC3AB0046B26C /* GOUITextFiled.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GOUITextFiled.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +95,10 @@
 				15531D221AAB089C009ADC38 /* AppDelegate.m */,
 				15531D2A1AAB089C009ADC38 /* Images.xcassets */,
 				15531D1D1AAB089C009ADC38 /* Supporting Files */,
+				1567A6591AABBE370046B26C /* SignupViewController.h */,
+				1567A65A1AABBE370046B26C /* SignupViewController.m */,
+				1567A65C1AABC3AB0046B26C /* GOUITextFiled.h */,
+				1567A65D1AABC3AB0046B26C /* GOUITextFiled.m */,
 			);
 			path = GOB2B;
 			sourceTree = "<group>";
@@ -202,7 +212,9 @@
 				15531D231AAB089C009ADC38 /* AppDelegate.m in Sources */,
 				15531D201AAB089C009ADC38 /* main.m in Sources */,
 				15531D871AABACBC009ADC38 /* InfoViewController.m in Sources */,
+				1567A65E1AABC3AB0046B26C /* GOUITextFiled.m in Sources */,
 				15531D451AAB0D9C009ADC38 /* StartupViewController.m in Sources */,
+				1567A65B1AABBE370046B26C /* SignupViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
