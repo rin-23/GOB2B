@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #include "StartupViewController.h"
 #include "SignupViewController.h"
-
+#import <Crashlytics/Crashlytics.h>
 @interface AppDelegate ()
 
 @end
@@ -17,8 +17,10 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
     // Override point for customization after application launch.
+    [Crashlytics startWithAPIKey:@"3c33801d279e506b0081fc68e59e9f00839ccff1"];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     StartupViewController* viewContr = [[StartupViewController alloc] init];

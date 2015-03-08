@@ -26,6 +26,7 @@
 		1567A65B1AABBE370046B26C /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1567A65A1AABBE370046B26C /* SignupViewController.m */; };
 		1567A65E1AABC3AB0046B26C /* GOUITextFiled.m in Sources */ = {isa = PBXBuildFile; fileRef = 1567A65D1AABC3AB0046B26C /* GOUITextFiled.m */; };
 		1567A6611AABE5D60046B26C /* OrganizationalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1567A6601AABE5D60046B26C /* OrganizationalViewController.m */; };
+		1567A6651AAC0ABB0046B26C /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1567A6641AAC0ABB0046B26C /* Crashlytics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		1567A65F1AABE5D60046B26C /* OrganizationalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrganizationalViewController.h; sourceTree = "<group>"; };
 		1567A6601AABE5D60046B26C /* OrganizationalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrganizationalViewController.m; sourceTree = "<group>"; };
 		1567A6621AABF41C0046B26C /* Keys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Keys.h; sourceTree = "<group>"; };
+		1567A6641AAC0ABB0046B26C /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1567A6651AAC0ABB0046B26C /* Crashlytics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +92,7 @@
 		15531D1C1AAB089C009ADC38 /* GOB2B */ = {
 			isa = PBXGroup;
 			children = (
+				1567A6641AAC0ABB0046B26C /* Crashlytics.framework */,
 				15531D881AABADC8009ADC38 /* GOB2B Assest - Jason */,
 				15531D7C1AAB166C009ADC38 /* Stairs.png */,
 				1567A65F1AABE5D60046B26C /* OrganizationalViewController.h */,
@@ -146,6 +150,7 @@
 				15531D161AAB089C009ADC38 /* Sources */,
 				15531D171AAB089C009ADC38 /* Frameworks */,
 				15531D181AAB089C009ADC38 /* Resources */,
+				1567A6631AAC0AA70046B26C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -210,6 +215,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1567A6631AAC0AA70046B26C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Crashlytics.framework/run 3c33801d279e506b0081fc68e59e9f00839ccff1 d066723388d42d5eb13235c44098a9c8161101d26126de89976f053d4713b467";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		15531D161AAB089C009ADC38 /* Sources */ = {
@@ -315,6 +336,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GOB2B",
+				);
 				INFOPLIST_FILE = GOB2B/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -330,6 +355,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GOB2B",
+				);
 				INFOPLIST_FILE = GOB2B/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

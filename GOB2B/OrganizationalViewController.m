@@ -170,7 +170,8 @@
     [[[UIAlertView alloc] initWithTitle:nil message:@"Goal saved" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
 }
 
--(void)doneButtonClicked:(UIButton*)sender {
+-(void)doneButtonClicked:(UIButton*)sender
+{
     [self.view endEditing:YES];
     
     NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
