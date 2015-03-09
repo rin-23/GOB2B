@@ -10,6 +10,9 @@
 #import "InfoViewController.h"
 #import "SignupViewController.h"
 #include "Keys.h"
+#include "GOB2BQuestionViewController.h"
+#include "GOB2BQuestions.h"
+#include "DataFactory.h"
 
 @interface StartupViewController ()
 {
@@ -107,8 +110,7 @@
 
 -(void)viewWillAppear:(BOOL)animated
 {
-    NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
-    if (![defaults boolForKey:kKeyDidSignup])
+    if (![[NSUserDefaults standardUserDefaults] boolForKey:kKeyDidSignup])
     {
         signupButton.hidden = NO;
         beginButton.hidden = YES;
@@ -124,7 +126,16 @@
 
 -(void)beginButtonClicked:(UIButton*)sender
 {
-//    sender.layer.borderColor = [UIColor whiteColor].CGColor;
+    GOB2BQuestions* questions = [DataFactory getQuestionsFromCache];
+    NSArray* sessionQuestions =  [questions getNextSessionQuestions];
+#warning DONT FORGET TO FREE
+    int* scoreArray_heap = (int*)malloc(sizeof(int) * sessionQuestions.count);
+    int qIndex = 0;
+    GOB2BQuestionViewController* qViewController = [[GOB2BQuestionViewController alloc] initWithQuestions:sessionQuestions scores:scoreArray_heap questionIndex:qIndex];
+    UINavigationController* navController = [[UINavigationController alloc] initWithRootViewController:qViewController];
+    navController.navigationBarHidden = YES;
+    navController.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+    [self presentViewController:navController animated:YES completion:nil];
 }
 
 -(void)beginButtonClickedDown:(UIButton*)sender

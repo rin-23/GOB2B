@@ -38,7 +38,7 @@
             Subgroup* subgroup = [[Subgroup alloc] init];;
             subgroup.name = components[index++];
             subgroup.curQuestion = 0;
-            for (int k = 0; k < 3; ++k)
+            for (int k = 0; k < 12; ++k)
             {
                 Question* question = [[Question alloc] init];
                 question.text = components[index++];

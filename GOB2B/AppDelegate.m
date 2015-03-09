@@ -10,6 +10,9 @@
 #include "StartupViewController.h"
 #include "SignupViewController.h"
 #import <Crashlytics/Crashlytics.h>
+#include "Keys.h"
+#include "GOB2BQuestions.h"
+#include "DataFactory.h"
 
 @interface AppDelegate ()
 
@@ -20,13 +23,29 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
     [Crashlytics startWithAPIKey:@"3c33801d279e506b0081fc68e59e9f00839ccff1"];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+
+    NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
+    BOOL key = [defaults boolForKey:kQuestionsCached];
+    if (!key) {
+        //need to read questinons from file and create initial cache
+        GOB2BQuestions* gQuestions = [DataFactory createQuestionsFromBundle];
+        if (gQuestions == nil) {
+            NSLog(@"[ERROR] Couldnt create initial questions cache");
+            [[[UIAlertView alloc] initWithTitle:@"Error" message:@"Couldn't create initial  questions" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
+        } else {
+            if(![DataFactory writeQuestionsToCache:gQuestions]) {
+                NSLog(@"[ERROR] Coudlnt write initial questions to cache");
+                [[[UIAlertView alloc] initWithTitle:@"Error" message:@"Couldn't write initial  questions to cache" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
+            } else {
+                [defaults setBool:YES forKey:kQuestionsCached];
+                [defaults synchronize];
+            }
+        }
+    } 
+    
     StartupViewController* viewContr = [[StartupViewController alloc] init];
-    
-    
     self.window.rootViewController = viewContr;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];

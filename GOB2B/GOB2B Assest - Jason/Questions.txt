@@ -1,0 +1,101 @@
+TEAM
+Background
+Google understood the problem it wanted to solve with creating Google for search. Larry was introduced to computers at age 6 and ended up writing mathematical codes for the WWW. Sergey was focused on developing data mining systems. Drawing on your backgrounds - How much do you feel it contributes to the success of solving the solution?
+1
+You are in a startup to solve a problem. How well do you and your team know about the problem they aim to solve?
+1
+Without the people in your current team, would you still be willing to run/work in your startup? Confident Yes (7) - Confident No (1)
+0
+Experiences speak multitudes. Are there experiences that you believe are not related to what you are doing but have proved valuable to your progress to date? Strongly Agree (7) - Strongly Disagree (1)
+1
+Kevin Systrom laughed on live air when he was asked about the acquisition of Instagram by Facebook for 1 billion USD. It was more than he was expecting for sure. But he took it. How well does your team know their value? Very well (7) - Not sure (1)
+1
+You have been on the receiving end of the problem you are trying to solve? Confident Yes (7) - Confident No (1)
+1
+You and your team are running out of funding. You will not make it to the end of the month. You receive an undervalue offering for takeover of your company with an addition to your team that will help you solve your problem more effectively tomorrow versus continuing and weathering the storm with the hopes being ideally valued at a later stage? How likely are you to take the undervalue? Confident Yes (7) - Confident No (1)
+0
+Does your team share a strong cohesion through a shared vision? Confident Yes (7) - Confident No (1)
+1
+Your team strives and makes an effort to be successful by backing your solutions with solid data? Confident Yes (7) - Confident No (1)
+1
+Ancedotes are great but experience is greater. How much experience do you and your team have in solving this? Not a lot (7) - A lot (1)
+0
+Databased research or Personal Experience makes your team a great team? Databased Research (7) - Personal Experience (1)
+0
+Think of 3 things you are grateful for. Is your teams background one of them?
+1
+Ability
+If you think back to what it took to build Microsoft, Apple and Google, it took smart people, it took visionaries and coders. Do you think your team has what it takes to be successful? Confident Yes (7) - Confident No (1)
+1
+A good team works well together. Their abilities compliment each other. Your teams skills and abilities DO NOT compliment each other? Strongly Agree (7) - Strongly Disagree (1)
+0
+You have made promises to the team that has led them to have unwavering trust in you. Your team although performing its best is huge cost on the sheets. Markets get rough and competitors are looming. Investment is heading your way if you can cut down your margins. You then take the following action. You let them go and receive large investment on condition of no take backs of old team. Strongly Agree (7) - Strongly Disagree (1)
+0
+Think about the problem you are trying to solve. More money instead of more ability could be added to your team and it would increase your likelihood of success. Strongly Agree (7) - Strongly Disagree (1)
+0
+Stay Hungry. Stay Foolish. We all know who said those words. How do you compare yourself on Steve Jobs Stay hungry/Stay Foolish words, considering that he gave up everything arguably including family (relationships and even his daughter Lisa) and even experimented in drugs. I am Steve (7) - I do not relate to him (1)
+1
+Do you believe in your team enough to deliver tasks that have been agreed upon? Do you believe that they will not only deliver but exceed your expectations? Confident Yes (7) - Confident No (1)
+1
+If the problem you are trying to solve was solved by a competitor. Would you bow out of the race or seek to continue running the track? Confident Yes (7) - Confident No (1)
+0
+Thinking of the Shakespearean tale of Othello. He was described as having vaulting ambition. Truly admirable. But this vaulting ambition led him to bite the hand that feed him so to speak in killing his king. How much should should vaulting ambition be a part of your team? Also keeping in mind that this vaulting ambition did lead him to be king. It is a must (7) - It is not necessary (1)
+1
+Good judgment comes from experience. And lot of experience comes from bad judgement. How much bad judgement have you had? A lifetime (7) - A handful (1)
+1
+You call a meeting with your entire team together. A fire breaks out and you can only save one asset. Your team members or your bank account - who would you save? Assuming you had both a good amount of money and a great team. Team (7) - Bank Account (1)
+1
+Trust should never lead to complacency. Do you find there is a strong & direct correlation between the amount of trust you give your team and the complacency that they display in return? Confident Yes (7) - Confident No (1)
+0
+Think of 3 things you are grateful for. Is your teams ability one of them? Confident Yes (7) - Confident No (1)
+1
+Technical Capacity
+Assuming you had all the technical capabilities - How well can you manage that ability? Are you technical? Confident Yes (7) - Confident No (1)
+1
+Your strategy was heavily dependent on being first to market. You are unable to make the launch date without outsourcing part of the product at the cost of losing inhouse developers. What do you choose? Outsource (7) - Move launch date (1)
+0
+Building a team can require you learn skills that are unconventional to your background. How willing are you to pick up other skills typically technically focused? Confident Yes (7) - Confident No (1)
+1
+Being technical is not core to your startup. Confident Yes (7) - Confident No (1)
+0
+What size of your team is technical and directly responsible for executing on the product / service. Large (7) and Small (1)
+0
+You have a challenge with your product/service. Do you throw more money at it or your current technical resources can handle it given more time? Confident Yes (7) - Confident No (1)
+1
+A failure is a lesson. Does your technical/product team welcome lessons? Confident Yes (7) - Confident No (1)
+1
+I need additional resources to achieve our next product milestone. Confident Yes (7) - Confident No (1)
+0
+A new tool is created that minimizes the use of your current technical team. Does that qualify for a reduction of technical team? Given the tool versus your team are equally weighted at time and cost to your business. Confident Yes (7) - Confident No (1)
+0
+Being technical is not core to your startup. Confident Yes (7) - Confident No (1)
+0
+You are you able to build the technical competencies of your team in house? Confident Yes (7) - Confident No (1)
+1
+Think of 3 things you are grateful for. Is your teams technical ability one of them? Confident Yes (7) - Confident No (1)
+1
+Feedback Loops
+Do you have measures in place to ensure that your experience in this industry is growing? Confident Yes (7) - Confident No (1)
+1
+An excellent feedback loop would allow for me to discover things such as what actions my team does will gain one core segment and perhaps cut off another? Confident Yes (7) - Confident No (1)
+1
+You and your team interact with customers deepening your interaction with the problem? Confident Yes (7) - Confident No (1)
+1
+Losing customers is ok if it is based on feedback loops. Confident Yes (7) - Confident No (1)
+1
+Your team has access to strong channels of communication with your customers. Confident Yes (7) - Confident No (1)
+1
+Think of 3 things you are grateful for. Is your teams ability to connect frequently with your target customer one of them? Confident Yes (7) - Confident No (1)
+1
+How important is it for you to keep the feedback loops? Would you keep them even though it is a cost creator?
+1
+I am unaware of my teams feedback loops that will inform their contribution to the company. Confident Yes (7) - Confident No (1) 
+0
+You have measures in place that allow for the iteration and evolution of the team dynamic based on customers? Confident Yes (7) - Confident No (1)
+1
+Do you have measures in place to ensure that your experience in this industry is growing? Confident Yes (7) - Confident No (1)
+1
+Do you feel there is ever a time to  stop iterating your solutions from feedback?
+1
+Think of 3 things you are grateful for. Is your teams ability to connect frequently with your target customer one of them? Confident Yes (7) - Confident No (1)
+1

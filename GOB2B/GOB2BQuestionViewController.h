@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface QuestionViewController : UIViewController
+@interface GOB2BQuestionViewController : UIViewController
+
+-(id)initWithQuestions:(NSArray*)questions scores:(int*)scores questionIndex:(int)qIndex;
+
 
 @end

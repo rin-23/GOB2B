@@ -32,13 +32,13 @@
 		1567A66E1AACF43A0046B26C /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = 1567A66D1AACF43A0046B26C /* Group.m */; };
 		1567A6711AAD13E10046B26C /* DataFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1567A6701AAD13E10046B26C /* DataFactory.m */; };
 		1567A6741AAD13FA0046B26C /* GOB2BQuestions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1567A6731AAD13FA0046B26C /* GOB2BQuestions.m */; };
-		1567A6761AAD21590046B26C /* Questions.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1567A6751AAD21590046B26C /* Questions.txt */; };
-		1567A6791AAD34360046B26C /* QuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1567A6781AAD34360046B26C /* QuestionViewController.m */; };
+		1567A6791AAD34360046B26C /* GOB2BQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1567A6781AAD34360046B26C /* GOB2BQuestionViewController.m */; };
 		1567A67E1AAD369F0046B26C /* SignUpInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1567A67D1AAD369F0046B26C /* SignUpInfo.m */; };
 		1567A6811AADD7AC0046B26C /* OrgGoal.m in Sources */ = {isa = PBXBuildFile; fileRef = 1567A6801AADD7AC0046B26C /* OrgGoal.m */; };
 		1567A6841AADD8CF0046B26C /* EndQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 1567A6831AADD8CF0046B26C /* EndQuestion.m */; };
 		1567A6871AADDA570046B26C /* OrgGoalsCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 1567A6861AADDA570046B26C /* OrgGoalsCollection.m */; };
 		1567A68F1AADDC540046B26C /* EndQuestionsCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 1567A68E1AADDC540046B26C /* EndQuestionsCollection.m */; };
+		1567A6911AAE1F910046B26C /* Questions.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1567A6901AAE1F910046B26C /* Questions.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,9 +81,8 @@
 		1567A6701AAD13E10046B26C /* DataFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataFactory.m; sourceTree = "<group>"; };
 		1567A6721AAD13FA0046B26C /* GOB2BQuestions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GOB2BQuestions.h; sourceTree = "<group>"; };
 		1567A6731AAD13FA0046B26C /* GOB2BQuestions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GOB2BQuestions.m; sourceTree = "<group>"; };
-		1567A6751AAD21590046B26C /* Questions.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Questions.txt; path = ../Questions.txt; sourceTree = "<group>"; };
-		1567A6771AAD34360046B26C /* QuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionViewController.h; sourceTree = "<group>"; };
-		1567A6781AAD34360046B26C /* QuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionViewController.m; sourceTree = "<group>"; };
+		1567A6771AAD34360046B26C /* GOB2BQuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GOB2BQuestionViewController.h; sourceTree = "<group>"; };
+		1567A6781AAD34360046B26C /* GOB2BQuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GOB2BQuestionViewController.m; sourceTree = "<group>"; };
 		1567A67C1AAD369F0046B26C /* SignUpInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpInfo.h; sourceTree = "<group>"; };
 		1567A67D1AAD369F0046B26C /* SignUpInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpInfo.m; sourceTree = "<group>"; };
 		1567A67F1AADD7AC0046B26C /* OrgGoal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrgGoal.h; sourceTree = "<group>"; };
@@ -94,6 +93,7 @@
 		1567A6861AADDA570046B26C /* OrgGoalsCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrgGoalsCollection.m; sourceTree = "<group>"; };
 		1567A68D1AADDC540046B26C /* EndQuestionsCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EndQuestionsCollection.h; sourceTree = "<group>"; };
 		1567A68E1AADDC540046B26C /* EndQuestionsCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EndQuestionsCollection.m; sourceTree = "<group>"; };
+		1567A6901AAE1F910046B26C /* Questions.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Questions.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,8 +156,8 @@
 		15531D881AABADC8009ADC38 /* GOB2B Assest */ = {
 			isa = PBXGroup;
 			children = (
+				1567A6901AAE1F910046B26C /* Questions.txt */,
 				15531D7C1AAB166C009ADC38 /* Stairs.png */,
-				1567A6751AAD21590046B26C /* Questions.txt */,
 				1567A6571AABB8720046B26C /* ranking.png */,
 				15531D9E1AABB305009ADC38 /* Graph.png */,
 				15531D991AABAE16009ADC38 /* GOB2B - Text.rtf */,
@@ -195,8 +195,8 @@
 				1567A6601AABE5D60046B26C /* OrgGoalsViewController.m */,
 				1567A6591AABBE370046B26C /* SignupViewController.h */,
 				1567A65A1AABBE370046B26C /* SignupViewController.m */,
-				1567A6771AAD34360046B26C /* QuestionViewController.h */,
-				1567A6781AAD34360046B26C /* QuestionViewController.m */,
+				1567A6771AAD34360046B26C /* GOB2BQuestionViewController.h */,
+				1567A6781AAD34360046B26C /* GOB2BQuestionViewController.m */,
 			);
 			name = "View Controller";
 			sourceTree = "<group>";
@@ -307,7 +307,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				15531D951AABADC8009ADC38 /* GOB2B Stairs LOGO 2.png in Resources */,
-				1567A6761AAD21590046B26C /* Questions.txt in Resources */,
 				15531D921AABADC8009ADC38 /* GOB2B Logo (white).png in Resources */,
 				15531D2B1AAB089C009ADC38 /* Images.xcassets in Resources */,
 				15531D931AABADC8009ADC38 /* GOB2B Logo 2.png in Resources */,
@@ -318,6 +317,7 @@
 				1567A6581AABB8720046B26C /* ranking.png in Resources */,
 				15531D961AABADC8009ADC38 /* GOB2B Stairs LOGO.png in Resources */,
 				15531D941AABADC8009ADC38 /* GOB2B Logo.png in Resources */,
+				1567A6911AAE1F910046B26C /* Questions.txt in Resources */,
 				15531D7D1AAB166C009ADC38 /* Stairs.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,7 +361,7 @@
 				1567A66E1AACF43A0046B26C /* Group.m in Sources */,
 				15531D451AAB0D9C009ADC38 /* StartupViewController.m in Sources */,
 				1567A65B1AABBE370046B26C /* SignupViewController.m in Sources */,
-				1567A6791AAD34360046B26C /* QuestionViewController.m in Sources */,
+				1567A6791AAD34360046B26C /* GOB2BQuestionViewController.m in Sources */,
 				1567A6841AADD8CF0046B26C /* EndQuestion.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,7 +407,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "8fd43f1b-320d-4741-aad1-60ddc9659be3";
+				PROVISIONING_PROFILE = "275dda27-3c15-4615-92b0-4e4aa6b6434b";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -443,7 +443,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PROVISIONING_PROFILE = "6aa0b6d2-ae13-4d7d-9e23-faf3d0bf944f";
+				PROVISIONING_PROFILE = "010feb22-e597-4cdf-98fe-ce40b77983c1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -463,7 +463,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "8fd43f1b-320d-4741-aad1-60ddc9659be3";
+				PROVISIONING_PROFILE = "275dda27-3c15-4615-92b0-4e4aa6b6434b";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -482,7 +482,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "6aa0b6d2-ae13-4d7d-9e23-faf3d0bf944f";
+				PROVISIONING_PROFILE = "010feb22-e597-4cdf-98fe-ce40b77983c1";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

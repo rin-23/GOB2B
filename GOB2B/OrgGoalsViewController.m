@@ -178,7 +178,9 @@
         NSLog(@"[ERROR] Didnt save data");
         [[[UIAlertView alloc] initWithTitle:@"Error" message:@"Couldnt save data. Please try again." delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
     } else {
-        [[NSUserDefaults standardUserDefaults] setBool:TRUE forKey:kKeyDidSignup];
+        NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
+        [defaults setBool:TRUE forKey:kKeyDidSignup];
+        [defaults synchronize];
     }
     
     [self.navigationController dismissViewControllerAnimated:YES completion:nil];

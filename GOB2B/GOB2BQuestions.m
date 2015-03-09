@@ -55,8 +55,8 @@
         Subgroup* nextSubgroup2 = group.subgroups[group.curSubGroup];
         group.curSubGroup = (group.curSubGroup + 1) % 4;
         
-        nextSubgroup1.curQuestion = (nextSubgroup1.curQuestion + 1) % 3;
-        nextSubgroup2.curQuestion = (nextSubgroup2.curQuestion + 1) % 3;
+        nextSubgroup1.curQuestion = (nextSubgroup1.curQuestion + 1) % 12;
+        nextSubgroup2.curQuestion = (nextSubgroup2.curQuestion + 1) % 12;
     }
 }
 

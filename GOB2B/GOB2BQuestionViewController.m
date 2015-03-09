@@ -1,0 +1,129 @@
+//
+//  QuestionViewController.m
+//  GOB2B
+//
+//  Created by Rinat Abdrashitov on 2015-03-08.
+//  Copyright (c) 2015 GOB2B. All rights reserved.
+//
+
+#import "GOB2BQuestionViewController.h"
+#import "Question.h"
+
+@interface GOB2BQuestionViewController () {
+    NSArray* mQuestions;
+    int* mScores;
+    int mQIndex;
+}
+
+@end
+
+@implementation GOB2BQuestionViewController
+
+-(id)initWithQuestions:(NSArray*)questions scores:(int*)scores questionIndex:(int)qIndex
+{
+    self = [super init];
+    if (self) {
+        mQuestions = questions;
+        mScores = scores;
+        mQIndex = qIndex;
+        assert(qIndex < mQuestions.count);
+    }
+    return self;
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    self.view.backgroundColor = [UIColor colorWithRed:0.890f green:0.890f blue:0.890f alpha:1.00f];
+    
+    UITextView* textView1 = [[UITextView alloc] initWithFrame:CGRectMake(10, 20, self.view.frame.size.width-20, 200)];
+    Question* question = mQuestions[mQIndex];
+    textView1.textContainerInset = UIEdgeInsetsZero;
+    textView1.textContainer.lineFragmentPadding = 0;
+    textView1.text = question.text;
+    textView1.editable = NO;
+    textView1.scrollEnabled = YES;
+    textView1.selectable = NO;
+    textView1.font = [UIFont systemFontOfSize:15.0f];
+    textView1.textAlignment = NSTextAlignmentCenter;
+    textView1.backgroundColor = [UIColor clearColor];
+    [self.view addSubview:textView1];
+    
+    int space2 = 10;
+    int size = (self.view.frame.size.height - CGRectGetMaxY(textView1.frame) -  5*space2)/4;
+    int leftMargin = (self.view.frame.size.width - 2*size - 10)/2;
+    
+    
+//    int size = size1 > size2 ? size2 : size1;
+    NSMutableArray* buttons = [[NSMutableArray alloc] init];
+    for (int row = 1; row <= 4; row++)
+    {
+        UIButton* button1 = [self createButtonWithSize:size];
+        UIButton* button2 = [self createButtonWithSize:size];
+
+        button1.center = CGPointMake(leftMargin + CGRectGetWidth(button1.frame)/2,
+                                     CGRectGetMaxY(textView1.frame) + (row-1) * CGRectGetWidth(button1.frame) + CGRectGetWidth(button1.frame)/2 +  row*10);
+
+        button2.center = CGPointMake(leftMargin + CGRectGetWidth(button1.frame) + 10 + CGRectGetWidth(button1.frame)/2 ,
+                                         CGRectGetMaxY(textView1.frame) + (row-1) * CGRectGetWidth(button1.frame) + CGRectGetWidth(button1.frame)/2 +  row*10);
+        
+
+        if (row!=4)
+        {
+            [button1 addTarget:self action:@selector(buttonSelected:) forControlEvents:UIControlEventTouchUpInside];
+            [self.view addSubview:button1];
+            [buttons addObject:button1];
+        }
+        
+        [self.view addSubview:button2];
+        [buttons addObject:button2];
+        [button2 addTarget:self action:@selector(buttonSelected:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    
+    [self shuffle:buttons];
+
+    for (int i = 0; i < 7; ++i)
+    {
+        UIButton* nextButton = buttons[i];
+        [nextButton setTitle:[NSString stringWithFormat:@"%i", i+1] forState:UIControlStateNormal];
+        nextButton.tag = i+1;
+    }
+}
+
+
+- (void)shuffle:(NSMutableArray*)array
+{
+    NSUInteger count = [array count];
+    for (NSUInteger i = 0; i < count; ++i) {
+        NSInteger remainingCount = count - i;
+        NSInteger exchangeIndex = i + arc4random_uniform((u_int32_t )remainingCount);
+        [array exchangeObjectAtIndex:i withObjectAtIndex:exchangeIndex];
+    }
+}
+
+-(void)buttonSelected:(UIButton*)button {
+    int index = button.tag;
+}
+
+-(UIButton*)createButtonWithSize:(int)size
+{
+    UIButton* nextButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [nextButton setFrame:CGRectMake(0, 0, size, size)];
+    nextButton.titleLabel.font = [UIFont systemFontOfSize:20.0f];
+//    [nextButton setTitle:[NSString stringWithFormat:@"%i", number] forState:UIControlStateNormal];
+    [nextButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [nextButton setTitleColor:[UIColor grayColor] forState:UIControlStateHighlighted];
+    [nextButton setTitleColor:[UIColor grayColor] forState:UIControlStateSelected];
+    nextButton.layer.borderColor = [UIColor whiteColor].CGColor;
+    nextButton.layer.borderWidth = 2.0f;
+//    nextButton.tag = number;
+
+    return nextButton;
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+@end
