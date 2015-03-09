@@ -27,6 +27,12 @@
 		1567A65E1AABC3AB0046B26C /* GOUITextFiled.m in Sources */ = {isa = PBXBuildFile; fileRef = 1567A65D1AABC3AB0046B26C /* GOUITextFiled.m */; };
 		1567A6611AABE5D60046B26C /* OrganizationalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1567A6601AABE5D60046B26C /* OrganizationalViewController.m */; };
 		1567A6651AAC0ABB0046B26C /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1567A6641AAC0ABB0046B26C /* Crashlytics.framework */; };
+		1567A6681AACF3790046B26C /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 1567A6671AACF3790046B26C /* Question.m */; };
+		1567A66B1AACF42F0046B26C /* Subgroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 1567A66A1AACF42F0046B26C /* Subgroup.m */; };
+		1567A66E1AACF43A0046B26C /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = 1567A66D1AACF43A0046B26C /* Group.m */; };
+		1567A6711AAD13E10046B26C /* QuestionFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1567A6701AAD13E10046B26C /* QuestionFactory.m */; };
+		1567A6741AAD13FA0046B26C /* GOB2BQuestions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1567A6731AAD13FA0046B26C /* GOB2BQuestions.m */; };
+		1567A6761AAD21590046B26C /* Questions.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1567A6751AAD21590046B26C /* Questions.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +65,17 @@
 		1567A6601AABE5D60046B26C /* OrganizationalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrganizationalViewController.m; sourceTree = "<group>"; };
 		1567A6621AABF41C0046B26C /* Keys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Keys.h; sourceTree = "<group>"; };
 		1567A6641AAC0ABB0046B26C /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		1567A6661AACF3790046B26C /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
+		1567A6671AACF3790046B26C /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
+		1567A6691AACF42F0046B26C /* Subgroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Subgroup.h; sourceTree = "<group>"; };
+		1567A66A1AACF42F0046B26C /* Subgroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Subgroup.m; sourceTree = "<group>"; };
+		1567A66C1AACF43A0046B26C /* Group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Group.h; sourceTree = "<group>"; };
+		1567A66D1AACF43A0046B26C /* Group.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Group.m; sourceTree = "<group>"; };
+		1567A66F1AAD13E10046B26C /* QuestionFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionFactory.h; sourceTree = "<group>"; };
+		1567A6701AAD13E10046B26C /* QuestionFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionFactory.m; sourceTree = "<group>"; };
+		1567A6721AAD13FA0046B26C /* GOB2BQuestions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GOB2BQuestions.h; sourceTree = "<group>"; };
+		1567A6731AAD13FA0046B26C /* GOB2BQuestions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GOB2BQuestions.m; sourceTree = "<group>"; };
+		1567A6751AAD21590046B26C /* Questions.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Questions.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +109,7 @@
 		15531D1C1AAB089C009ADC38 /* GOB2B */ = {
 			isa = PBXGroup;
 			children = (
+				1567A6751AAD21590046B26C /* Questions.txt */,
 				1567A6641AAC0ABB0046B26C /* Crashlytics.framework */,
 				15531D881AABADC8009ADC38 /* GOB2B Assest - Jason */,
 				15531D7C1AAB166C009ADC38 /* Stairs.png */,
@@ -110,6 +128,16 @@
 				15531D2A1AAB089C009ADC38 /* Images.xcassets */,
 				15531D1D1AAB089C009ADC38 /* Supporting Files */,
 				1567A6621AABF41C0046B26C /* Keys.h */,
+				1567A6661AACF3790046B26C /* Question.h */,
+				1567A6671AACF3790046B26C /* Question.m */,
+				1567A6691AACF42F0046B26C /* Subgroup.h */,
+				1567A66A1AACF42F0046B26C /* Subgroup.m */,
+				1567A66C1AACF43A0046B26C /* Group.h */,
+				1567A66D1AACF43A0046B26C /* Group.m */,
+				1567A6721AAD13FA0046B26C /* GOB2BQuestions.h */,
+				1567A6731AAD13FA0046B26C /* GOB2BQuestions.m */,
+				1567A66F1AAD13E10046B26C /* QuestionFactory.h */,
+				1567A6701AAD13E10046B26C /* QuestionFactory.m */,
 			);
 			path = GOB2B;
 			sourceTree = "<group>";
@@ -200,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				15531D951AABADC8009ADC38 /* GOB2B Stairs LOGO 2.png in Resources */,
+				1567A6761AAD21590046B26C /* Questions.txt in Resources */,
 				15531D921AABADC8009ADC38 /* GOB2B Logo (white).png in Resources */,
 				15531D2B1AAB089C009ADC38 /* Images.xcassets in Resources */,
 				15531D931AABADC8009ADC38 /* GOB2B Logo 2.png in Resources */,
@@ -240,8 +269,13 @@
 				1567A6611AABE5D60046B26C /* OrganizationalViewController.m in Sources */,
 				15531D231AAB089C009ADC38 /* AppDelegate.m in Sources */,
 				15531D201AAB089C009ADC38 /* main.m in Sources */,
+				1567A6711AAD13E10046B26C /* QuestionFactory.m in Sources */,
 				15531D871AABACBC009ADC38 /* InfoViewController.m in Sources */,
 				1567A65E1AABC3AB0046B26C /* GOUITextFiled.m in Sources */,
+				1567A6741AAD13FA0046B26C /* GOB2BQuestions.m in Sources */,
+				1567A6681AACF3790046B26C /* Question.m in Sources */,
+				1567A66B1AACF42F0046B26C /* Subgroup.m in Sources */,
+				1567A66E1AACF43A0046B26C /* Group.m in Sources */,
 				15531D451AAB0D9C009ADC38 /* StartupViewController.m in Sources */,
 				1567A65B1AABBE370046B26C /* SignupViewController.m in Sources */,
 			);

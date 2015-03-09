@@ -10,6 +10,7 @@
 #include "StartupViewController.h"
 #include "SignupViewController.h"
 #import <Crashlytics/Crashlytics.h>
+
 @interface AppDelegate ()
 
 @end
@@ -24,6 +25,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     StartupViewController* viewContr = [[StartupViewController alloc] init];
+    
     
     self.window.rootViewController = viewContr;
     self.window.backgroundColor = [UIColor whiteColor];
