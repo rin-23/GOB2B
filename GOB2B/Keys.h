@@ -11,21 +11,21 @@
 
 #define kKeyDidSignup @"didsingupkey"
 
-//SIGNUP SCREEN
-#define kKeyVision @"Vision"
-#define kKeyMission @"Mission"
-#define kKeyIndustry @"Industry"
-#define kKeyIncubated @"Incubated or Incubating"
-#define kKeyDetails @"Details"
-#define kKeyRoleOrganization @"Role within Organization"
-#define kKeyStage @"Stage"
-
-//Organizational goals screen
-//Create key by adding goal number
-#define kKeyNumberOfGoals @"Number of Goals"
-#define kKeyGoal @"Goal Statement"
-#define kKeyKnowReasons @"Known reasons why"
-#define kDifficutly @"Difficulty to Accomplish"
-#define kUrgency @"Urgency"
+////SIGNUP SCREEN
+//#define kKeyVision @"Vision"
+//#define kKeyMission @"Mission"
+//#define kKeyIndustry @"Industry"
+//#define kKeyIncubated @"Incubated or Incubating"
+//#define kKeyDetails @"Details"
+//#define kKeyRoleOrganization @"Role within Organization"
+//#define kKeyStage @"Stage"
+//
+////Organizational goals screen
+////Create key by adding goal number
+//#define kKeyNumberOfGoals @"Number of Goals"
+//#define kKeyGoal @"Goal Statement"
+//#define kKeyKnowReasons @"Known reasons why"
+//#define kDifficutly @"Difficulty to Accomplish"
+//#define kUrgency @"Urgency"
 
 #endif

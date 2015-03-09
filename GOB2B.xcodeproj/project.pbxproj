@@ -25,14 +25,20 @@
 		1567A6581AABB8720046B26C /* ranking.png in Resources */ = {isa = PBXBuildFile; fileRef = 1567A6571AABB8720046B26C /* ranking.png */; };
 		1567A65B1AABBE370046B26C /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1567A65A1AABBE370046B26C /* SignupViewController.m */; };
 		1567A65E1AABC3AB0046B26C /* GOUITextFiled.m in Sources */ = {isa = PBXBuildFile; fileRef = 1567A65D1AABC3AB0046B26C /* GOUITextFiled.m */; };
-		1567A6611AABE5D60046B26C /* OrganizationalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1567A6601AABE5D60046B26C /* OrganizationalViewController.m */; };
+		1567A6611AABE5D60046B26C /* OrgGoalsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1567A6601AABE5D60046B26C /* OrgGoalsViewController.m */; };
 		1567A6651AAC0ABB0046B26C /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1567A6641AAC0ABB0046B26C /* Crashlytics.framework */; };
 		1567A6681AACF3790046B26C /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 1567A6671AACF3790046B26C /* Question.m */; };
 		1567A66B1AACF42F0046B26C /* Subgroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 1567A66A1AACF42F0046B26C /* Subgroup.m */; };
 		1567A66E1AACF43A0046B26C /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = 1567A66D1AACF43A0046B26C /* Group.m */; };
-		1567A6711AAD13E10046B26C /* QuestionFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1567A6701AAD13E10046B26C /* QuestionFactory.m */; };
+		1567A6711AAD13E10046B26C /* DataFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1567A6701AAD13E10046B26C /* DataFactory.m */; };
 		1567A6741AAD13FA0046B26C /* GOB2BQuestions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1567A6731AAD13FA0046B26C /* GOB2BQuestions.m */; };
 		1567A6761AAD21590046B26C /* Questions.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1567A6751AAD21590046B26C /* Questions.txt */; };
+		1567A6791AAD34360046B26C /* QuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1567A6781AAD34360046B26C /* QuestionViewController.m */; };
+		1567A67E1AAD369F0046B26C /* SignUpInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1567A67D1AAD369F0046B26C /* SignUpInfo.m */; };
+		1567A6811AADD7AC0046B26C /* OrgGoal.m in Sources */ = {isa = PBXBuildFile; fileRef = 1567A6801AADD7AC0046B26C /* OrgGoal.m */; };
+		1567A6841AADD8CF0046B26C /* EndQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 1567A6831AADD8CF0046B26C /* EndQuestion.m */; };
+		1567A6871AADDA570046B26C /* OrgGoalsCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 1567A6861AADDA570046B26C /* OrgGoalsCollection.m */; };
+		1567A68F1AADDC540046B26C /* EndQuestionsCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 1567A68E1AADDC540046B26C /* EndQuestionsCollection.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,7 +50,7 @@
 		15531D2A1AAB089C009ADC38 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		15531D431AAB0D9C009ADC38 /* StartupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartupViewController.h; sourceTree = "<group>"; };
 		15531D441AAB0D9C009ADC38 /* StartupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartupViewController.m; sourceTree = "<group>"; };
-		15531D7C1AAB166C009ADC38 /* Stairs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Stairs.png; sourceTree = "<group>"; };
+		15531D7C1AAB166C009ADC38 /* Stairs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Stairs.png; path = ../Stairs.png; sourceTree = "<group>"; };
 		15531D851AABACBC009ADC38 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
 		15531D861AABACBC009ADC38 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
 		15531D891AABADC8009ADC38 /* GOB2B - Insights Graph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GOB2B - Insights Graph.png"; sourceTree = "<group>"; };
@@ -61,8 +67,8 @@
 		1567A65A1AABBE370046B26C /* SignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignupViewController.m; sourceTree = "<group>"; };
 		1567A65C1AABC3AB0046B26C /* GOUITextFiled.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GOUITextFiled.h; sourceTree = "<group>"; };
 		1567A65D1AABC3AB0046B26C /* GOUITextFiled.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GOUITextFiled.m; sourceTree = "<group>"; };
-		1567A65F1AABE5D60046B26C /* OrganizationalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrganizationalViewController.h; sourceTree = "<group>"; };
-		1567A6601AABE5D60046B26C /* OrganizationalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrganizationalViewController.m; sourceTree = "<group>"; };
+		1567A65F1AABE5D60046B26C /* OrgGoalsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrgGoalsViewController.h; sourceTree = "<group>"; };
+		1567A6601AABE5D60046B26C /* OrgGoalsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrgGoalsViewController.m; sourceTree = "<group>"; };
 		1567A6621AABF41C0046B26C /* Keys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Keys.h; sourceTree = "<group>"; };
 		1567A6641AAC0ABB0046B26C /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		1567A6661AACF3790046B26C /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
@@ -71,11 +77,23 @@
 		1567A66A1AACF42F0046B26C /* Subgroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Subgroup.m; sourceTree = "<group>"; };
 		1567A66C1AACF43A0046B26C /* Group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Group.h; sourceTree = "<group>"; };
 		1567A66D1AACF43A0046B26C /* Group.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Group.m; sourceTree = "<group>"; };
-		1567A66F1AAD13E10046B26C /* QuestionFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionFactory.h; sourceTree = "<group>"; };
-		1567A6701AAD13E10046B26C /* QuestionFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionFactory.m; sourceTree = "<group>"; };
+		1567A66F1AAD13E10046B26C /* DataFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataFactory.h; sourceTree = "<group>"; };
+		1567A6701AAD13E10046B26C /* DataFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataFactory.m; sourceTree = "<group>"; };
 		1567A6721AAD13FA0046B26C /* GOB2BQuestions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GOB2BQuestions.h; sourceTree = "<group>"; };
 		1567A6731AAD13FA0046B26C /* GOB2BQuestions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GOB2BQuestions.m; sourceTree = "<group>"; };
-		1567A6751AAD21590046B26C /* Questions.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Questions.txt; sourceTree = "<group>"; };
+		1567A6751AAD21590046B26C /* Questions.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Questions.txt; path = ../Questions.txt; sourceTree = "<group>"; };
+		1567A6771AAD34360046B26C /* QuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionViewController.h; sourceTree = "<group>"; };
+		1567A6781AAD34360046B26C /* QuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionViewController.m; sourceTree = "<group>"; };
+		1567A67C1AAD369F0046B26C /* SignUpInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpInfo.h; sourceTree = "<group>"; };
+		1567A67D1AAD369F0046B26C /* SignUpInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpInfo.m; sourceTree = "<group>"; };
+		1567A67F1AADD7AC0046B26C /* OrgGoal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrgGoal.h; sourceTree = "<group>"; };
+		1567A6801AADD7AC0046B26C /* OrgGoal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrgGoal.m; sourceTree = "<group>"; };
+		1567A6821AADD8CF0046B26C /* EndQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EndQuestion.h; sourceTree = "<group>"; };
+		1567A6831AADD8CF0046B26C /* EndQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EndQuestion.m; sourceTree = "<group>"; };
+		1567A6851AADDA570046B26C /* OrgGoalsCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrgGoalsCollection.h; sourceTree = "<group>"; };
+		1567A6861AADDA570046B26C /* OrgGoalsCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrgGoalsCollection.m; sourceTree = "<group>"; };
+		1567A68D1AADDC540046B26C /* EndQuestionsCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EndQuestionsCollection.h; sourceTree = "<group>"; };
+		1567A68E1AADDC540046B26C /* EndQuestionsCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EndQuestionsCollection.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,35 +127,18 @@
 		15531D1C1AAB089C009ADC38 /* GOB2B */ = {
 			isa = PBXGroup;
 			children = (
-				1567A6751AAD21590046B26C /* Questions.txt */,
-				1567A6641AAC0ABB0046B26C /* Crashlytics.framework */,
-				15531D881AABADC8009ADC38 /* GOB2B Assest - Jason */,
-				15531D7C1AAB166C009ADC38 /* Stairs.png */,
-				1567A65F1AABE5D60046B26C /* OrganizationalViewController.h */,
-				1567A6601AABE5D60046B26C /* OrganizationalViewController.m */,
-				1567A6591AABBE370046B26C /* SignupViewController.h */,
-				1567A65A1AABBE370046B26C /* SignupViewController.m */,
+				1567A67B1AAD36550046B26C /* View Controller */,
+				1567A67A1AAD36230046B26C /* Data Objects */,
+				15531D881AABADC8009ADC38 /* GOB2B Assest */,
 				1567A65C1AABC3AB0046B26C /* GOUITextFiled.h */,
 				1567A65D1AABC3AB0046B26C /* GOUITextFiled.m */,
-				15531D431AAB0D9C009ADC38 /* StartupViewController.h */,
-				15531D441AAB0D9C009ADC38 /* StartupViewController.m */,
-				15531D851AABACBC009ADC38 /* InfoViewController.h */,
-				15531D861AABACBC009ADC38 /* InfoViewController.m */,
+				1567A6621AABF41C0046B26C /* Keys.h */,
+				1567A66F1AAD13E10046B26C /* DataFactory.h */,
+				1567A6701AAD13E10046B26C /* DataFactory.m */,
 				15531D211AAB089C009ADC38 /* AppDelegate.h */,
 				15531D221AAB089C009ADC38 /* AppDelegate.m */,
 				15531D2A1AAB089C009ADC38 /* Images.xcassets */,
 				15531D1D1AAB089C009ADC38 /* Supporting Files */,
-				1567A6621AABF41C0046B26C /* Keys.h */,
-				1567A6661AACF3790046B26C /* Question.h */,
-				1567A6671AACF3790046B26C /* Question.m */,
-				1567A6691AACF42F0046B26C /* Subgroup.h */,
-				1567A66A1AACF42F0046B26C /* Subgroup.m */,
-				1567A66C1AACF43A0046B26C /* Group.h */,
-				1567A66D1AACF43A0046B26C /* Group.m */,
-				1567A6721AAD13FA0046B26C /* GOB2BQuestions.h */,
-				1567A6731AAD13FA0046B26C /* GOB2BQuestions.m */,
-				1567A66F1AAD13E10046B26C /* QuestionFactory.h */,
-				1567A6701AAD13E10046B26C /* QuestionFactory.m */,
 			);
 			path = GOB2B;
 			sourceTree = "<group>";
@@ -145,15 +146,18 @@
 		15531D1D1AAB089C009ADC38 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1567A6641AAC0ABB0046B26C /* Crashlytics.framework */,
 				15531D1E1AAB089C009ADC38 /* Info.plist */,
 				15531D1F1AAB089C009ADC38 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		15531D881AABADC8009ADC38 /* GOB2B Assest - Jason */ = {
+		15531D881AABADC8009ADC38 /* GOB2B Assest */ = {
 			isa = PBXGroup;
 			children = (
+				15531D7C1AAB166C009ADC38 /* Stairs.png */,
+				1567A6751AAD21590046B26C /* Questions.txt */,
 				1567A6571AABB8720046B26C /* ranking.png */,
 				15531D9E1AABB305009ADC38 /* Graph.png */,
 				15531D991AABAE16009ADC38 /* GOB2B - Text.rtf */,
@@ -165,7 +169,82 @@
 				15531D8E1AABADC8009ADC38 /* GOB2B Stairs LOGO.png */,
 				15531D8F1AABADC8009ADC38 /* Stairs Germany.png */,
 			);
+			name = "GOB2B Assest";
 			path = "GOB2B Assest - Jason";
+			sourceTree = "<group>";
+		};
+		1567A67A1AAD36230046B26C /* Data Objects */ = {
+			isa = PBXGroup;
+			children = (
+				1567A68C1AADDBDB0046B26C /* Sign Up */,
+				1567A68A1AADDB370046B26C /* GOB2BQuestions */,
+				1567A6881AADDB090046B26C /* Organizational goals */,
+				1567A68B1AADDBC70046B26C /* Questions */,
+			);
+			name = "Data Objects";
+			sourceTree = "<group>";
+		};
+		1567A67B1AAD36550046B26C /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				15531D431AAB0D9C009ADC38 /* StartupViewController.h */,
+				15531D441AAB0D9C009ADC38 /* StartupViewController.m */,
+				15531D851AABACBC009ADC38 /* InfoViewController.h */,
+				15531D861AABACBC009ADC38 /* InfoViewController.m */,
+				1567A65F1AABE5D60046B26C /* OrgGoalsViewController.h */,
+				1567A6601AABE5D60046B26C /* OrgGoalsViewController.m */,
+				1567A6591AABBE370046B26C /* SignupViewController.h */,
+				1567A65A1AABBE370046B26C /* SignupViewController.m */,
+				1567A6771AAD34360046B26C /* QuestionViewController.h */,
+				1567A6781AAD34360046B26C /* QuestionViewController.m */,
+			);
+			name = "View Controller";
+			sourceTree = "<group>";
+		};
+		1567A6881AADDB090046B26C /* Organizational goals */ = {
+			isa = PBXGroup;
+			children = (
+				1567A67F1AADD7AC0046B26C /* OrgGoal.h */,
+				1567A6801AADD7AC0046B26C /* OrgGoal.m */,
+				1567A6851AADDA570046B26C /* OrgGoalsCollection.h */,
+				1567A6861AADDA570046B26C /* OrgGoalsCollection.m */,
+			);
+			name = "Organizational goals";
+			sourceTree = "<group>";
+		};
+		1567A68A1AADDB370046B26C /* GOB2BQuestions */ = {
+			isa = PBXGroup;
+			children = (
+				1567A6721AAD13FA0046B26C /* GOB2BQuestions.h */,
+				1567A6731AAD13FA0046B26C /* GOB2BQuestions.m */,
+				1567A6661AACF3790046B26C /* Question.h */,
+				1567A6671AACF3790046B26C /* Question.m */,
+				1567A6691AACF42F0046B26C /* Subgroup.h */,
+				1567A66A1AACF42F0046B26C /* Subgroup.m */,
+				1567A66C1AACF43A0046B26C /* Group.h */,
+				1567A66D1AACF43A0046B26C /* Group.m */,
+			);
+			name = GOB2BQuestions;
+			sourceTree = "<group>";
+		};
+		1567A68B1AADDBC70046B26C /* Questions */ = {
+			isa = PBXGroup;
+			children = (
+				1567A6821AADD8CF0046B26C /* EndQuestion.h */,
+				1567A6831AADD8CF0046B26C /* EndQuestion.m */,
+				1567A68D1AADDC540046B26C /* EndQuestionsCollection.h */,
+				1567A68E1AADDC540046B26C /* EndQuestionsCollection.m */,
+			);
+			name = Questions;
+			sourceTree = "<group>";
+		};
+		1567A68C1AADDBDB0046B26C /* Sign Up */ = {
+			isa = PBXGroup;
+			children = (
+				1567A67C1AAD369F0046B26C /* SignUpInfo.h */,
+				1567A67D1AAD369F0046B26C /* SignUpInfo.m */,
+			);
+			name = "Sign Up";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,18 +345,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1567A6611AABE5D60046B26C /* OrganizationalViewController.m in Sources */,
+				1567A6611AABE5D60046B26C /* OrgGoalsViewController.m in Sources */,
+				1567A6811AADD7AC0046B26C /* OrgGoal.m in Sources */,
 				15531D231AAB089C009ADC38 /* AppDelegate.m in Sources */,
 				15531D201AAB089C009ADC38 /* main.m in Sources */,
-				1567A6711AAD13E10046B26C /* QuestionFactory.m in Sources */,
+				1567A67E1AAD369F0046B26C /* SignUpInfo.m in Sources */,
+				1567A6711AAD13E10046B26C /* DataFactory.m in Sources */,
 				15531D871AABACBC009ADC38 /* InfoViewController.m in Sources */,
 				1567A65E1AABC3AB0046B26C /* GOUITextFiled.m in Sources */,
 				1567A6741AAD13FA0046B26C /* GOB2BQuestions.m in Sources */,
+				1567A68F1AADDC540046B26C /* EndQuestionsCollection.m in Sources */,
 				1567A6681AACF3790046B26C /* Question.m in Sources */,
 				1567A66B1AACF42F0046B26C /* Subgroup.m in Sources */,
+				1567A6871AADDA570046B26C /* OrgGoalsCollection.m in Sources */,
 				1567A66E1AACF43A0046B26C /* Group.m in Sources */,
 				15531D451AAB0D9C009ADC38 /* StartupViewController.m in Sources */,
 				1567A65B1AABBE370046B26C /* SignupViewController.m in Sources */,
+				1567A6791AAD34360046B26C /* QuestionViewController.m in Sources */,
+				1567A6841AADD8CF0046B26C /* EndQuestion.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

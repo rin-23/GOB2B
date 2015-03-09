@@ -8,8 +8,11 @@
 
 #import "SignupViewController.h"
 #import "GOUITextFiled.h"
-#import "OrganizationalViewController.h"
+#import "OrgGoalsViewController.h"
 #include "Keys.h"
+#include "SignUpInfo.h"
+#include "DataFactory.h"
+
 @interface SignupViewController () {
     UIScrollView* scrollView;
     BOOL keyboardIsShown;
@@ -33,8 +36,8 @@
     
     UISegmentedControl* segmentedControl;
 
-    NSArray* fields;
-    NSArray* keys;
+//    NSArray* fields;
+//    NSArray* keys;
 }
 
 @end
@@ -281,52 +284,53 @@
     [scrollView addSubview:cancelButton];
     
     //plus Stage
-    fields = @[field1,field2,field3,field4,field5,field6];
-    keys = @[kKeyVision, kKeyMission, kKeyIndustry, kKeyIncubated, kKeyDetails, kKeyRoleOrganization];
+    
+//    keys = @[kKeyVision, kKeyMission, kKeyIndustry, kKeyIncubated, kKeyDetails, kKeyRoleOrganization];
     
     scrollView.contentSize =  CGSizeMake(self.view.frame.size.width, CGRectGetMaxY(nextButton.frame)+20);
 }
 
--(void)nextButtonClicked:(UIButton*)sender {
+-(void)nextButtonClicked:(UIButton*)sender
+{
     [self.view endEditing:YES];
-    self.view.userInteractionEnabled = NO;
-    NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
-//
-//    for (int i = 0; i < fields.count; ++i)
-//    {
-//        UITextField* textField = fields[i];
-//        NSString* key = keys[i];
-//        if ([key isEqualToString:kKeyDetails]) {
-//            //ignore details field
-//            continue;
-//        }
-//        
-//        if ([textField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]].length == 0)
-//        {
-//            self.view.userInteractionEnabled = YES;
-//            [[[UIAlertView alloc] initWithTitle:nil message:@"Some information is missing" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
-//            return;
-//        }
-//    }
-
     
-    for (int i = 0; i < keys.count; ++i)
+#if !DEBUG
+    for (int i = 0; i < fields.count; ++i)
     {
         UITextField* textField = fields[i];
         NSString* key = keys[i];
-        [defaults setObject:textField.text forKey:key];
+        if ([key isEqualToString:kKeyDetails]) {
+            //ignore details field
+            continue;
+        }
+        
+        if ([textField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]].length == 0)
+        {
+            self.view.userInteractionEnabled = YES;
+            [[[UIAlertView alloc] initWithTitle:nil message:@"Some information is missing" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
+            return;
+        }
     }
-    
-    int index = [segmentedControl selectedSegmentIndex];
-    [defaults setObject:[NSString stringWithFormat:@"%i", index+1] forKey:kKeyStage];
+#endif
 
-    if (![defaults synchronize]) {
+//    fields = @[field1,field2,field3,field4,field5,field6];
+    SignUpInfo* signUpInfo = [[SignUpInfo alloc] init];
+    signUpInfo.vision = field1.text;
+    signUpInfo.mission = field2.text;
+    signUpInfo.industry = field3.text;
+    signUpInfo.incubated = field4.text;
+    signUpInfo.details = field5.text;
+    signUpInfo.role = field6.text;
+    NSInteger index = [segmentedControl selectedSegmentIndex] + 1;
+    signUpInfo.stage = [NSString stringWithFormat:@"%li", (long)index];
+
+    if (![DataFactory writeSignUpInfoToCache:signUpInfo]) {
         NSLog(@"[ERROR] Didnt save data");
         [[[UIAlertView alloc] initWithTitle:@"Error" message:@"Couldnt save data" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
     }
 
-    self.view.userInteractionEnabled = YES;
-    OrganizationalViewController* org = [[OrganizationalViewController alloc] init];
+
+    OrgGoalsViewController* org = [[OrgGoalsViewController alloc] init];
     [self.navigationController pushViewController:org animated:YES];
 }
 

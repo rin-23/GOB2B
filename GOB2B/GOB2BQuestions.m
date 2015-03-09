@@ -9,7 +9,7 @@
 #import "GOB2BQuestions.h"
 #import "Subgroup.h"
 #import "Question.h"
-#import "QuestionFactory.h"
+#import "DataFactory.h"
 
 @implementation GOB2BQuestions
 
@@ -58,6 +58,20 @@
         nextSubgroup1.curQuestion = (nextSubgroup1.curQuestion + 1) % 3;
         nextSubgroup2.curQuestion = (nextSubgroup2.curQuestion + 1) % 3;
     }
+}
+
+-(void)encodeWithCoder:(NSCoder *)aCoder
+{
+    [aCoder encodeObject:self.groups forKey:@"GOB2BQuestions_groups"];
+}
+
+-(id)initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super init];
+    if (self) {
+        self.groups = [aDecoder decodeObjectForKey:@"GOB2BQuestions_groups"];
+    }
+    return self;
 }
 
 

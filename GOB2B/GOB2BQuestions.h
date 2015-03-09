@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "Group.h"
 
-@interface GOB2BQuestions : NSObject
+@interface GOB2BQuestions : NSObject <NSCoding>
 
 -(NSArray*)getNextSessionQuestions;
 -(void)finishedSession;

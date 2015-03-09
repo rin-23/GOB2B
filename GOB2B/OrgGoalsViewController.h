@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface OrganizationalViewController : UIViewController
+@interface OrgGoalsViewController : UIViewController
 
 @end

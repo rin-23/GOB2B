@@ -6,10 +6,13 @@
 //  Copyright (c) 2015 GOB2B. All rights reserved.
 //
 
-#import "OrganizationalViewController.h"
+#import "OrgGoalsViewController.h"
 #include "Keys.h"
+#include "OrgGoal.h"
+#include "OrgGoalsCollection.h"
+#include "DataFactory.h"
 
-@interface OrganizationalViewController () {
+@interface OrgGoalsViewController () {
     UIScrollView* scrollView;
     BOOL keyboardIsShown;
     
@@ -17,15 +20,16 @@
     UITextView* textView2;
     UISegmentedControl* segmentedControl1;
     UISegmentedControl* segmentedControl2;
+    OrgGoalsCollection* goalsCollection;
 }
 
 @end
 
-@implementation OrganizationalViewController
+@implementation OrgGoalsViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor colorWithRed:0.890f green:0.890f blue:0.890f alpha:1.00f];
@@ -135,32 +139,20 @@
     [scrollView addSubview:cancelButton];
     
     scrollView.contentSize =  CGSizeMake(self.view.frame.size.width, CGRectGetMaxY(cancelButton.frame)+20);
+    
+    goalsCollection = [[OrgGoalsCollection alloc] init];
 }
 
 -(void)listAnotherButtonClicked:(UIButton*)sender
 {
-    NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
-    if (![defaults stringForKey:kKeyNumberOfGoals]) {
-        [defaults setInteger:0 forKey:kKeyNumberOfGoals];
-    }
+    OrgGoal* goal = [[OrgGoal alloc] init];
     
-    NSInteger keyIndex = [defaults integerForKey:kKeyNumberOfGoals] + 1;
-    [defaults setInteger:keyIndex forKey:kKeyNumberOfGoals];
+    goal.goal = textView1.text;
+    goal.reasons = textView2.text;
+    goal.difficulty = [NSString stringWithFormat:@"%li", segmentedControl1.selectedSegmentIndex+1];
+    goal.urgency = [NSString stringWithFormat:@"%li", segmentedControl2.selectedSegmentIndex+1];
 
-    [defaults setObject:textView1.text forKey:[NSString stringWithFormat:@"%@%i", kKeyGoal, keyIndex]];
-    
-    [defaults setObject:textView2.text forKey:[NSString stringWithFormat:@"%@%i", kKeyKnowReasons, keyIndex]];
-    
-    NSString* value1 = [NSString stringWithFormat:@"%i", segmentedControl1.selectedSegmentIndex+1];
-    [defaults setObject:value1 forKey:[NSString stringWithFormat:@"%@%i", kDifficutly, keyIndex]];
-    
-    NSString* value2 = [NSString stringWithFormat:@"%i", segmentedControl2.selectedSegmentIndex+1];
-    [defaults setObject:value2 forKey:[NSString stringWithFormat:@"%@%i", kUrgency, keyIndex]];
-    
-    if (![defaults synchronize]) {
-        NSLog(@"[ERROR] Didnt save data");
-        [[[UIAlertView alloc] initWithTitle:@"Error" message:@"Couldnt save data" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
-    }
+    [goalsCollection.goals addObject:goal];
     
     textView1.text = @"";
     textView2.text = @"";
@@ -174,30 +166,19 @@
 {
     [self.view endEditing:YES];
     
-    NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
-    if (![defaults stringForKey:kKeyNumberOfGoals]) {
-        [defaults setInteger:0 forKey:kKeyNumberOfGoals];
-    }
+    OrgGoal* goal = [[OrgGoal alloc] init];
+    goal.goal = textView1.text;
+    goal.reasons = textView2.text;
+    goal.difficulty = [NSString stringWithFormat:@"%li", segmentedControl1.selectedSegmentIndex+1];
+    goal.urgency = [NSString stringWithFormat:@"%li", segmentedControl2.selectedSegmentIndex+1];
+    [goalsCollection.goals addObject:goal];
     
-    NSInteger keyIndex = [defaults integerForKey:kKeyNumberOfGoals] + 1;
-    [defaults setInteger:keyIndex forKey:kKeyNumberOfGoals];
     
-    [defaults setObject:textView1.text forKey:[NSString stringWithFormat:@"%@%i", kKeyGoal, keyIndex]];
-    
-    [defaults setObject:textView2.text forKey:[NSString stringWithFormat:@"%@%i", kKeyKnowReasons, keyIndex]];
-    
-    NSString* value1 = [NSString stringWithFormat:@"%i", segmentedControl1.selectedSegmentIndex+1];
-    [defaults setObject:value1 forKey:[NSString stringWithFormat:@"%@%i", kDifficutly, keyIndex]];
-
-    NSString* value2 = [NSString stringWithFormat:@"%i", segmentedControl2.selectedSegmentIndex+1];
-    [defaults setObject:value2 forKey:[NSString stringWithFormat:@"%@%i", kUrgency, keyIndex]];
-    
-    //SINGUP IS DONE
-    [defaults setBool:TRUE forKey:kKeyDidSignup];
-    
-    if (![defaults synchronize]) {
+    if (![DataFactory writeOrgGoalsCollectionToCache:goalsCollection]) {
         NSLog(@"[ERROR] Didnt save data");
-        [[[UIAlertView alloc] initWithTitle:@"Error" message:@"Couldnt save data" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
+        [[[UIAlertView alloc] initWithTitle:@"Error" message:@"Couldnt save data. Please try again." delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
+    } else {
+        [[NSUserDefaults standardUserDefaults] setBool:TRUE forKey:kKeyDidSignup];
     }
     
     [self.navigationController dismissViewControllerAnimated:YES completion:nil];
@@ -279,18 +260,5 @@
                                                     name:UIKeyboardWillHideNotification
                                                   object:nil];
 }
-
-
-
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
