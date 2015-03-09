@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GOB2BQuestions.h"
 
 @interface GOB2BQuestionViewController : UIViewController
 
--(id)initWithQuestions:(NSArray*)questions scores:(int*)scores questionIndex:(int)qIndex;
+-(id)initWithQuestions:(GOB2BQuestions*)gob2bQuestions
+               session:(NSArray*)sessionQestions 
+         questionIndex:(int)qIndex;
 
 
 @end

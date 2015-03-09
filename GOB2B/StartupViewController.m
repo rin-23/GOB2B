@@ -128,10 +128,8 @@
 {
     GOB2BQuestions* questions = [DataFactory getQuestionsFromCache];
     NSArray* sessionQuestions =  [questions getNextSessionQuestions];
-#warning DONT FORGET TO FREE
-    int* scoreArray_heap = (int*)malloc(sizeof(int) * sessionQuestions.count);
     int qIndex = 0;
-    GOB2BQuestionViewController* qViewController = [[GOB2BQuestionViewController alloc] initWithQuestions:sessionQuestions scores:scoreArray_heap questionIndex:qIndex];
+    GOB2BQuestionViewController* qViewController = [[GOB2BQuestionViewController alloc] initWithQuestions:questions session:sessionQuestions questionIndex:qIndex];
     UINavigationController* navController = [[UINavigationController alloc] initWithRootViewController:qViewController];
     navController.navigationBarHidden = YES;
     navController.modalTransitionStyle = UIModalTransitionStyleCoverVertical;

@@ -8,10 +8,11 @@
 
 #import "GOB2BQuestionViewController.h"
 #import "Question.h"
+#import "DataFactory.h"
 
 @interface GOB2BQuestionViewController () {
+    GOB2BQuestions* mB2bQuestions;
     NSArray* mQuestions;
-    int* mScores;
     int mQIndex;
 }
 
@@ -19,12 +20,14 @@
 
 @implementation GOB2BQuestionViewController
 
--(id)initWithQuestions:(NSArray*)questions scores:(int*)scores questionIndex:(int)qIndex
+-(id)initWithQuestions:(GOB2BQuestions*)gob2bQuestions
+               session:(NSArray*)sessionQestions
+         questionIndex:(int)qIndex
 {
     self = [super init];
     if (self) {
-        mQuestions = questions;
-        mScores = scores;
+        mB2bQuestions = gob2bQuestions;
+        mQuestions = sessionQestions;
         mQIndex = qIndex;
         assert(qIndex < mQuestions.count);
     }
@@ -102,7 +105,20 @@
 }
 
 -(void)buttonSelected:(UIButton*)button {
-    int index = button.tag;
+    int score = button.tag;
+    Question* question = mQuestions[mQIndex];
+    question.score = score;
+    
+    if (mQIndex+1 == mQuestions.count) { //last question
+        [mB2bQuestions finishedSession];
+        if(![DataFactory writeQuestionsToCache:mB2bQuestions]) {
+            NSLog(@"[ERROR] didnt save questions to cache");
+        }
+        [self dismissViewControllerAnimated:YES completion:nil];
+    } else {
+        GOB2BQuestionViewController* qViewController = [[GOB2BQuestionViewController alloc] initWithQuestions:mB2bQuestions session:mQuestions questionIndex:mQIndex+1];
+        [self.navigationController pushViewController:qViewController animated:YES];
+    }
 }
 
 -(UIButton*)createButtonWithSize:(int)size
