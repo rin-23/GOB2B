@@ -7,6 +7,7 @@
 //
 
 #import "OrgGoalsCollection.h"
+#import "OrgGoal.h"
 
 @implementation OrgGoalsCollection
 
@@ -31,6 +32,16 @@
         self.goals = [aDecoder decodeObjectForKey:@"Org_goalarray"];
     }
     return self;
+}
+
+-(void)writeToFile:(NSFileHandle*)fileHandle
+{
+    [fileHandle writeData:[@"###ORGANIZATIONAL GOALS###" dataUsingEncoding:NSUTF8StringEncoding]];
+    [fileHandle writeData:[@"\n" dataUsingEncoding:NSUTF8StringEncoding]];
+    for (OrgGoal* goal in self.goals) {
+        [goal writeToFile:fileHandle];
+    }
+    [fileHandle writeData:[@"\n" dataUsingEncoding:NSUTF8StringEncoding]];
 }
 
 @end

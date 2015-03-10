@@ -12,4 +12,6 @@
 
 @property (nonatomic, strong) NSMutableArray* goals;
 
+-(void)writeToFile:(NSFileHandle*)fileHandle;
+
 @end

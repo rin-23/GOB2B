@@ -16,5 +16,6 @@
 @property (nonatomic, strong) NSString* difficulty;
 @property (nonatomic, strong) NSString* urgency;
 
+-(void)writeToFile:(NSFileHandle*)fileHandle;
 
 @end

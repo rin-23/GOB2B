@@ -74,5 +74,15 @@
     return self;
 }
 
+-(void)writeToFile:(NSFileHandle*)fileHandle
+{
+    [fileHandle writeData:[@"###GOB2B QUESTIONS###" dataUsingEncoding:NSUTF8StringEncoding]];
+    [fileHandle writeData:[@"\n" dataUsingEncoding:NSUTF8StringEncoding]];
+    for (Group* group in self.groups)
+    {
+        [group writeToFile:fileHandle];
+    }
+    [fileHandle writeData:[@"\n" dataUsingEncoding:NSUTF8StringEncoding]];
+}
 
 @end

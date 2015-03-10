@@ -7,6 +7,7 @@
 //
 
 #import "EndQuestionsCollection.h"
+#import "EndQuestion.h"
 
 @implementation EndQuestionsCollection
 
@@ -14,6 +15,7 @@
 {
     self = [super init];
     if (self) {
+        self.questions = [[NSMutableArray alloc] init];
     }
     return self;
 }
@@ -30,6 +32,16 @@
         self.questions = [aDecoder decodeObjectForKey:@"EndQuestionsCollection_questions"];
     }
     return self;
+}
+
+
+-(void)writeToFile:(NSFileHandle*)fileHandle {
+    [fileHandle writeData:[@"###END_QUESTIONS###" dataUsingEncoding:NSUTF8StringEncoding]];
+    [fileHandle writeData:[@"\n" dataUsingEncoding:NSUTF8StringEncoding]];
+    for (EndQuestion* question in self.questions) {
+        [question writeToFile:fileHandle];
+    }
+    [fileHandle writeData:[@"\n" dataUsingEncoding:NSUTF8StringEncoding]];
 }
 
 @end

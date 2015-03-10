@@ -15,4 +15,6 @@
 @property (nonatomic, strong) NSString* name;
 @property (nonatomic, strong) NSMutableArray* questions;
 
+-(void)writeToFile:(NSFileHandle*)fileHandle;
+
 @end

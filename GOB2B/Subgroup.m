@@ -7,6 +7,7 @@
 //
 
 #import "Subgroup.h"
+#import "Question.h"
 
 @implementation Subgroup
 
@@ -34,6 +35,24 @@
         self.questions = [aDecoder decodeObjectForKey:@"Subgroup_questions"];
     }
     return self;
+}
+
+-(void)writeToFile:(NSFileHandle*)fileHandle
+{
+    NSString* nullStr = @"NULL";
+    [fileHandle writeData:[@"###SUBGROUP###" dataUsingEncoding:NSUTF8StringEncoding]];
+    [fileHandle writeData:[@"\n" dataUsingEncoding:NSUTF8StringEncoding]];
+    if (self.name) {
+        [fileHandle writeData:[self.name dataUsingEncoding:NSUTF8StringEncoding]];
+    } else {
+        [fileHandle writeData:[nullStr dataUsingEncoding:NSUTF8StringEncoding]];
+    }
+    [fileHandle writeData:[@"\n" dataUsingEncoding:NSUTF8StringEncoding]];
+    
+    for (Question* quesiont in self.questions) {
+        [quesiont writeToFile:fileHandle];
+    }
+
 }
 
 @end

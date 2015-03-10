@@ -110,6 +110,13 @@
 
 #pragma mark - End Questions Collection
 
++(BOOL)isEndQuestionsCollectionInCache
+{
+    NSString* cacheFolder = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    NSString* pathToFile = [NSString stringWithFormat:@"%@/%@", cacheFolder, @"EndQuestionsCollection"];
+    return [[NSFileManager defaultManager] fileExistsAtPath:pathToFile];
+}
+
 +(EndQuestionsCollection*)getEndQuestionsCollectionFromCache {
     NSString* cacheFolder = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
     NSString* pathToFile = [NSString stringWithFormat:@"%@/%@", cacheFolder, @"EndQuestionsCollection"];
@@ -124,5 +131,28 @@
     return result;
 }
 
++(NSData*)prepareDataForMail
+{
+    SignUpInfo* info = [self getSignUpInfoFromCache];
+    OrgGoalsCollection* orgGoals = [self getOrgGoalsCollectionFromCache];
+    GOB2BQuestions* b2bQs = [self getQuestionsFromCache];
+    EndQuestionsCollection* endQuestions = [self getEndQuestionsCollectionFromCache];
+    
+    NSString* cacheFolder = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    NSString* pathToFile = [NSString stringWithFormat:@"%@/%@", cacheFolder, @"Results.txt"];
+    [[NSFileManager defaultManager] createFileAtPath:pathToFile contents:nil attributes:nil];
+//    [@"" writeToFile:pathToFile atomically:YES encoding:NSUTF8StringEncoding error:nil];
+    
+    NSFileHandle* fileHandle = [NSFileHandle fileHandleForWritingAtPath:pathToFile];
+    assert(fileHandle != nil);
+    [info writeToFile:fileHandle];
+    [orgGoals writeToFile:fileHandle];
+    [b2bQs writeToFile:fileHandle];
+    [endQuestions writeToFile:fileHandle];
+    [fileHandle closeFile];
+    
+    NSData* data = [NSData dataWithContentsOfFile:pathToFile];
+    return data;
+}
 
 @end

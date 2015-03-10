@@ -11,5 +11,5 @@
 @interface EndQuestionsCollection : NSObject <NSCoding>
 
 @property (nonatomic, strong) NSMutableArray* questions;
-
+-(void)writeToFile:(NSFileHandle*)fileHandle;
 @end

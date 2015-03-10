@@ -24,7 +24,10 @@
 +(SignUpInfo*)getSignUpInfoFromCache;
 +(BOOL)writeSignUpInfoToCache:(SignUpInfo*)info;
 
++(BOOL)isEndQuestionsCollectionInCache;
 +(EndQuestionsCollection*)getEndQuestionsCollectionFromCache;
 +(BOOL)writeEndQuestionsCollectionToCahce:(EndQuestionsCollection*)collection;
+
++(NSData*)prepareDataForMail;
 
 @end

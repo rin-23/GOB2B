@@ -18,4 +18,7 @@
 @property (nonatomic, strong) NSString* role;
 @property (nonatomic, strong) NSString* stage;
 
+-(void)writeToFile:(NSFileHandle*)fileHandle;
+
+
 @end

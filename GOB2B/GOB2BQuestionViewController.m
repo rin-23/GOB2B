@@ -9,6 +9,7 @@
 #import "GOB2BQuestionViewController.h"
 #import "Question.h"
 #import "DataFactory.h"
+#import "QuestionsViewController.h"
 
 @interface GOB2BQuestionViewController () {
     GOB2BQuestions* mB2bQuestions;
@@ -114,7 +115,9 @@
         if(![DataFactory writeQuestionsToCache:mB2bQuestions]) {
             NSLog(@"[ERROR] didnt save questions to cache");
         }
-        [self dismissViewControllerAnimated:YES completion:nil];
+        QuestionsViewController* qViewController = [[QuestionsViewController alloc] init];
+        [self.navigationController pushViewController:qViewController animated:YES];
+        
     } else {
         GOB2BQuestionViewController* qViewController = [[GOB2BQuestionViewController alloc] initWithQuestions:mB2bQuestions session:mQuestions questionIndex:mQIndex+1];
         [self.navigationController pushViewController:qViewController animated:YES];

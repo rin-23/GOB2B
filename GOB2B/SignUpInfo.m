@@ -36,4 +36,62 @@
     return self;
 }
 
+-(void)writeToFile:(NSFileHandle*)fileHandle
+{
+    NSString* nullStr = @"NULL";
+
+    [fileHandle writeData:[@"###SIGNUP###" dataUsingEncoding:NSUTF8StringEncoding]];
+    [fileHandle writeData:[@"\n" dataUsingEncoding:NSUTF8StringEncoding]];
+    
+    if (self.vision) {
+        [fileHandle writeData:[self.vision dataUsingEncoding:NSUTF8StringEncoding]];
+    } else {
+        [fileHandle writeData:[nullStr dataUsingEncoding:NSUTF8StringEncoding]];
+    }
+    [fileHandle writeData:[@"\n" dataUsingEncoding:NSUTF8StringEncoding]];
+    
+    if (self.mission) {
+        [fileHandle writeData:[self.mission dataUsingEncoding:NSUTF8StringEncoding]];
+    } else {
+        [fileHandle writeData:[nullStr dataUsingEncoding:NSUTF8StringEncoding]];
+    }
+    [fileHandle writeData:[@"\n" dataUsingEncoding:NSUTF8StringEncoding]];
+
+    if (self.industry) {
+        [fileHandle writeData:[self.industry dataUsingEncoding:NSUTF8StringEncoding]];
+    } else {
+        [fileHandle writeData:[nullStr dataUsingEncoding:NSUTF8StringEncoding]];
+    }
+    [fileHandle writeData:[@"\n" dataUsingEncoding:NSUTF8StringEncoding]];
+
+    if (self.incubated) {
+        [fileHandle writeData:[self.incubated dataUsingEncoding:NSUTF8StringEncoding]];
+    } else {
+        [fileHandle writeData:[nullStr dataUsingEncoding:NSUTF8StringEncoding]];
+    }
+    [fileHandle writeData:[@"\n" dataUsingEncoding:NSUTF8StringEncoding]];
+
+    if (self.details) {
+        [fileHandle writeData:[self.details dataUsingEncoding:NSUTF8StringEncoding]];
+    } else {
+        [fileHandle writeData:[nullStr dataUsingEncoding:NSUTF8StringEncoding]];
+    }
+    [fileHandle writeData:[@"\n" dataUsingEncoding:NSUTF8StringEncoding]];
+
+    if (self.role) {
+        [fileHandle writeData:[self.role dataUsingEncoding:NSUTF8StringEncoding]];
+    } else {
+        [fileHandle writeData:[nullStr dataUsingEncoding:NSUTF8StringEncoding]];
+    }
+    [fileHandle writeData:[@"\n" dataUsingEncoding:NSUTF8StringEncoding]];
+    
+    if (self.stage) {
+        [fileHandle writeData:[self.stage dataUsingEncoding:NSUTF8StringEncoding]];
+    } else {
+        [fileHandle writeData:[nullStr dataUsingEncoding:NSUTF8StringEncoding]];
+    }
+    [fileHandle writeData:[@"\n\n" dataUsingEncoding:NSUTF8StringEncoding]];
+
+}
+
 @end

@@ -14,4 +14,6 @@
 @property (nonatomic, strong) NSString* text;
 @property (nonatomic, assign) int is7Max;
 
+-(void)writeToFile:(NSFileHandle*)fileHandle;
+
 @end

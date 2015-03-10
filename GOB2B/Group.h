@@ -14,4 +14,6 @@
 @property (nonatomic, strong) NSString* name;
 @property (nonatomic, strong) NSMutableArray* subgroups;
 
+-(void)writeToFile:(NSFileHandle*)fileHandle;
+
 @end

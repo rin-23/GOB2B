@@ -13,6 +13,7 @@
 
 -(NSArray*)getNextSessionQuestions;
 -(void)finishedSession;
+-(void)writeToFile:(NSFileHandle*)fileHandle;
 
 @property (nonatomic, strong) NSMutableArray* groups;
 
