@@ -10,6 +10,7 @@
 
 @interface Question : NSObject <NSCoding>
 
+@property (nonatomic, strong) NSString* subcat;
 @property (nonatomic, assign) int score;
 @property (nonatomic, strong) NSString* text;
 @property (nonatomic, assign) int is7Max;

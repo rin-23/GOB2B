@@ -16,6 +16,7 @@
         self.score = 0;
         self.text = @"";
         self.is7Max = 1;
+        self.subcat = @"";
     }
     return self;
 }
@@ -24,6 +25,7 @@
 {
     [aCoder encodeInt:self.score forKey:@"Question_score"];
     [aCoder encodeObject:self.text forKey:@"Question_text"];
+    [aCoder encodeObject:self.subcat forKey:@"Question_subcat"];
     [aCoder encodeInt:self.is7Max forKey:@"Question_is7max"];
 }
 
@@ -34,6 +36,7 @@
     {
         self.score = [aDecoder decodeIntForKey:@"Question_score"];
         self.text = [aDecoder decodeObjectForKey:@"Question_text"];
+        self.subcat = [aDecoder decodeObjectForKey:@"Question_subcat"];
         self.is7Max = [aDecoder decodeIntForKey:@"Question_is7max"];
     }
     return self;

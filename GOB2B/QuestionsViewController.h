@@ -10,7 +10,7 @@
 #import <MessageUI/MessageUI.h>
 #import <MessageUI/MFMailComposeViewController.h>
 
-@interface QuestionsViewController : UIViewController <MFMailComposeViewControllerDelegate>
+@interface QuestionsViewController : UIViewController <MFMailComposeViewControllerDelegate, UITextViewDelegate>
 {
     
 }

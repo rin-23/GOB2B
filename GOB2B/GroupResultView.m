@@ -54,7 +54,6 @@
         mTotalIndicator.layer.borderColor = [UIColor blackColor].CGColor;
         mTotalIndicator.backgroundColor = [UIColor clearColor];
         [self addSubview:mTotalIndicator];
-
     }
     return self;
 }
@@ -83,13 +82,13 @@
         }
         
         UIView* indicator = mIndicators[i];
-        if (avg > 0.0f && avg <= 2.5f) {
+        if (avg > 0.0f && avg <= 1.75f) {
             indicator.backgroundColor = [UIColor redColor];
-        } else if (avg > 2.5f && avg <= 4.0f) {
+        } else if (avg > 1.75f && avg <= 3.5f) {
             indicator.backgroundColor = [UIColor orangeColor];
-        } else if (avg > 4.0f && avg <=5.5f) {
+        } else if (avg > 3.5f && avg <=5.25f) {
             indicator.backgroundColor = [UIColor yellowColor];
-        } else if (avg > 5.5f && avg <=7.0f) {
+        } else if (avg > 5.25f && avg <=7.0f) {
             indicator.backgroundColor = [UIColor greenColor];
         } else {
             indicator.backgroundColor = [UIColor clearColor];
@@ -97,13 +96,13 @@
     }
 
     totalAvg /= totalAvgCount;
-    if (totalAvg > 0.0f && totalAvg <= 2.5f) {
+    if (totalAvg > 0.0f && totalAvg <= 1.75f) {
         mTotalIndicator.backgroundColor = [UIColor redColor];
-    } else if (totalAvg > 2.5f && totalAvg <= 4.0f) {
+    } else if (totalAvg > 1.75f && totalAvg <= 3.5f) {
         mTotalIndicator.backgroundColor = [UIColor orangeColor];
-    } else if (totalAvg > 4.0f && totalAvg <=5.5f) {
+    } else if (totalAvg > 3.5f && totalAvg <=5.25f) {
         mTotalIndicator.backgroundColor = [UIColor yellowColor];
-    } else if (totalAvg > 5.5f && totalAvg <=7.0f) {
+    } else if (totalAvg > 5.25f && totalAvg <=7.0f) {
         mTotalIndicator.backgroundColor = [UIColor greenColor];
     } else {
         mTotalIndicator.backgroundColor = [UIColor clearColor];

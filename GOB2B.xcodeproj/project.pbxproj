@@ -23,6 +23,8 @@
 		15531D9A1AABAE16009ADC38 /* GOB2B - Text.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 15531D991AABAE16009ADC38 /* GOB2B - Text.rtf */; };
 		15531D9F1AABB305009ADC38 /* Graph.png in Resources */ = {isa = PBXBuildFile; fileRef = 15531D9E1AABB305009ADC38 /* Graph.png */; };
 		1561E5E01AAF70E100BE92A3 /* Questions.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1561E5DF1AAF70E100BE92A3 /* Questions.txt */; };
+		1561E5E21AAF86F600BE92A3 /* info icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1561E5E11AAF86F600BE92A3 /* info icon.png */; };
+		1561E5E61AAF88AE00BE92A3 /* GOB2B LOGO CORRECT.png in Resources */ = {isa = PBXBuildFile; fileRef = 1561E5E51AAF88AE00BE92A3 /* GOB2B LOGO CORRECT.png */; };
 		1567A6581AABB8720046B26C /* ranking.png in Resources */ = {isa = PBXBuildFile; fileRef = 1567A6571AABB8720046B26C /* ranking.png */; };
 		1567A65B1AABBE370046B26C /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1567A65A1AABBE370046B26C /* SignupViewController.m */; };
 		1567A65E1AABC3AB0046B26C /* GOUITextFiled.m in Sources */ = {isa = PBXBuildFile; fileRef = 1567A65D1AABC3AB0046B26C /* GOUITextFiled.m */; };
@@ -68,6 +70,8 @@
 		15531D991AABAE16009ADC38 /* GOB2B - Text.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "GOB2B - Text.rtf"; sourceTree = "<group>"; };
 		15531D9E1AABB305009ADC38 /* Graph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Graph.png; sourceTree = "<group>"; };
 		1561E5DF1AAF70E100BE92A3 /* Questions.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Questions.txt; sourceTree = "<group>"; };
+		1561E5E11AAF86F600BE92A3 /* info icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "info icon.png"; path = "../../../../Library/Containers/com.apple.mail/Data/Library/Mail Downloads/C5975735-8818-48FB-A220-400A962D9BA8/info icon.png"; sourceTree = "<group>"; };
+		1561E5E51AAF88AE00BE92A3 /* GOB2B LOGO CORRECT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GOB2B LOGO CORRECT.png"; sourceTree = "<group>"; };
 		1567A6571AABB8720046B26C /* ranking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ranking.png; sourceTree = "<group>"; };
 		1567A6591AABBE370046B26C /* SignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignupViewController.h; sourceTree = "<group>"; };
 		1567A65A1AABBE370046B26C /* SignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignupViewController.m; sourceTree = "<group>"; };
@@ -176,6 +180,8 @@
 		15531D881AABADC8009ADC38 /* GOB2B Assest */ = {
 			isa = PBXGroup;
 			children = (
+				1561E5E51AAF88AE00BE92A3 /* GOB2B LOGO CORRECT.png */,
+				1561E5E11AAF86F600BE92A3 /* info icon.png */,
 				1561E5DF1AAF70E100BE92A3 /* Questions.txt */,
 				15531D7C1AAB166C009ADC38 /* Stairs.png */,
 				1567A6571AABB8720046B26C /* ranking.png */,
@@ -337,9 +343,11 @@
 				15531D931AABADC8009ADC38 /* GOB2B Logo 2.png in Resources */,
 				15531D9A1AABAE16009ADC38 /* GOB2B - Text.rtf in Resources */,
 				15531D971AABADC8009ADC38 /* Stairs Germany.png in Resources */,
+				1561E5E21AAF86F600BE92A3 /* info icon.png in Resources */,
 				15531D9F1AABB305009ADC38 /* Graph.png in Resources */,
 				15531D911AABADC8009ADC38 /* GOB2B - Insights Graph.png in Resources */,
 				1567A6581AABB8720046B26C /* ranking.png in Resources */,
+				1561E5E61AAF88AE00BE92A3 /* GOB2B LOGO CORRECT.png in Resources */,
 				15531D961AABADC8009ADC38 /* GOB2B Stairs LOGO.png in Resources */,
 				15531D941AABADC8009ADC38 /* GOB2B Logo.png in Resources */,
 				15531D7D1AAB166C009ADC38 /* Stairs.png in Resources */,
@@ -435,7 +443,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "275dda27-3c15-4615-92b0-4e4aa6b6434b";
+				PROVISIONING_PROFILE = "41a7a5ef-ce75-4059-bd28-b6ddcdd4f75a";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -471,7 +479,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PROVISIONING_PROFILE = "010feb22-e597-4cdf-98fe-ce40b77983c1";
+				PROVISIONING_PROFILE = "265d747b-6350-495f-828c-00b9e712586e";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -491,7 +499,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "275dda27-3c15-4615-92b0-4e4aa6b6434b";
+				PROVISIONING_PROFILE = "41a7a5ef-ce75-4059-bd28-b6ddcdd4f75a";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -510,7 +518,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "010feb22-e597-4cdf-98fe-ce40b77983c1";
+				PROVISIONING_PROFILE = "265d747b-6350-495f-828c-00b9e712586e";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

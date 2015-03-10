@@ -27,7 +27,7 @@
     NSArray* components = [content componentsSeparatedByCharactersInSet:[NSCharacterSet newlineCharacterSet]];
     
     int index = 0;
-    int kNumOfTeams = 3;
+    int kNumOfTeams = 6;
     for (int i = 0; i < kNumOfTeams; ++i)
     {
         Group* group = [[Group alloc] init];;
@@ -44,6 +44,7 @@
                 question.text = components[index++];
                 question.is7Max = [components[index++] intValue];
                 question.score = 0;
+                question.subcat = subgroup.name;
                 [subgroup.questions addObject:question];
             }
             [group.subgroups addObject:subgroup];

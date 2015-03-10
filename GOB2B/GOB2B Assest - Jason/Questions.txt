@@ -123,7 +123,7 @@ The product/service delivers on customer expectations? Highly Likely (7) - Highl
 1
 Does your product/service functionality reflect your vision? Confident Yes (7) - Confident No (1)
 1
-Does your product/service functionality reflect your vision? Confident Yes (7) - Confident No (1)
+How likely is your customer to recommend your product/service through their networks? Highly Likely (7) - Highly Unlikely (1)
 1
 Implementation
 The risk around the technology used is negligible. Strongly Agree (7) - Strongly Disagree (1)
@@ -300,4 +300,307 @@ Do target customers have the means and abilities to see the full value and there
 You are quickly and effectively able to identify and sort out viable customers? Confident Yes (7) - Confident No (1)
 1
 Do the macro-level factors in the market create conditions for an entrepreneur and business model to enter? Confident Yes (7) - Confident No (1)
+1
+FINANCIALS
+Revenue Assumptions
+You have made revenue assumptions regarding your startup. You have a clear idea of companies and their assumptions that you can point to? Confident Yes (7) - Confident No (1)
+1
+Are your companies revenue assumptions logical and do they have backing in data? Confident Yes (7) - Confident No (1)
+1
+What you do not know cannot harm you. Ignorance is bliss. Strongly Agree (7) - Strongly Disagree (1)
+0
+Revenues will serve as proof of the successful nature and sustainable focus of your company. Strongly Agree (7) - Strongly Disagree (1)
+1
+Your revenue assumptions are based on customer renewal and growth data? Confident Yes (7) - Confident No (1)
+1
+There are no dangers in having intuitive revenue assumptions if you are making money on them? Confident Yes (7) - Confident No (1)
+0
+Market studies can confirm your assumptions? Confident Yes (7) - Confident No (1)
+1
+Revenue generated or to be generated can be traced back to todays assumptions? Confident Yes (7) - Confident No (1)
+1
+My revenue assumptions are always changing. Strongly Agree (7) - Strongly Disagree (1)
+0
+The team helps discover the assumptions. Strongly Agree (7) - Strongly Disagree (1)
+1
+Market studies can confirm your assumptions. Confident Yes (7) - Confident No (1)
+1
+Are your companies revenue assumptions logical and do they have backing in data? Confident Yes (7) - Confident No (1)
+1
+Cost Assumptions
+I have believable cost projections for salaries and administrative costs. Confident Yes (7) - Confident No (1)
+1
+if you are making a large amount of revenue, then the cost assumptions are not as important. Confident Yes (7) - Confident No (1)
+0
+After stating my assumptions i often verify them. Confident Yes (7) - Confident No (1)
+1
+I have believable cost projections variable costs of goods sold/ service delivery. Confident Yes (7) - Confident No (1)
+1
+Cost assumptions are not as important as revenue assumptions. Strongly Agree (7) - Strongly Disagree (1)
+1
+A testing process for my cost assumptions has been established. Strongly Agree (7) - Strongly Disagree (1)
+1
+I have logical data backing up pricing assumptions.Confident Yes (7) - Confident No (1)
+1
+I have believable cost projections costs not directly related to business such as tax, audits and regulations? Confident Yes (7) - Confident No (1)
+1
+My assumptions are always changing. Confident Yes (7) - Confident No (1)
+0
+I use realistic methodological approaches for deriving assumptions. Confident Yes (7) - Confident No (1)
+1
+I have believable cost projections variable costs of goods sold/ service delivery. Confident Yes (7) - Confident No (1)
+1
+I have logical data backing up pricing assumptions. Confident Yes (7) - Confident No (1)
+1
+Unit Economics
+My profit margins are very attractive. Confident Yes (7) - Confident No (1)
+1
+It is obvious that my startup is going to make money. Confident Yes (7) - Confident No (1)
+1
+My lifetime value of a customer is worth significantly more (x3 more) than the cost of customer acquisition? Confident Yes (7) - Confident No (1)
+1
+Is your customer willing to spend a significant amount of time with your startup (are they loyal)? Confident Yes (7) - Confident No (1)
+1
+You would be comfortable investing in a company that does not track its customer life time value and customer acquisition cost? Confident Yes (7) - Confident No (1)
+0
+Customers who are advocating my product/service do so because of pricing? Confident Yes (7) - Confident No (1)
+1
+The economics make sense to my customer. Confident Yes (7) - Confident No (1)
+1
+Do your revenues exceed costs per user or do revenues exceed your costs over a long term. First Option (7) - Second Option (1)
+1
+The undertaking is definitively profitable. Confident Yes (7) - Confident No (1)
+1
+My lifetime value of a customer is worth significantly more (x3 more) than the cost of customer acquisition? Confident Yes (7) - Confident No (1)
+1
+The economics make sense to my customer. Confident Yes (7) - Confident No (1)
+1
+Is your customer willing to spend a significant amount of time with your startup (are they loyal)? Confident Yes (7) - Confident No (1)
+1
+Financial Management
+We have a strong financial management resources on our team. Strongly Agree (7) - Strongly Disagree (1)
+1
+You have taken the appropriate steps to ensure financial management capacity? Confident Yes (7) - Confident No (1)
+1
+Right now my team would be able to manage external funding. Strongly Agree (7) - Strongly Disagree (1)
+1
+You have the appropriate cash flow management systems and monitoring systems in place. Strongly Agree (7) - Strongly Disagree (1)
+1
+Your cost structure is extremely reasonable. Strongly Agree (7) - Strongly Disagree (1)
+1
+Our finances have accountability checks within the team. Confident Yes (7) - Confident No (1)
+1
+Should your revenues not meet your targets will you experience financial difficulties? Confident Yes (7) - Confident No (1)
+1
+You will look to external funding to deal with cash shortfalls? Confident Yes (7) - Confident No (1)
+0
+You have taken the appropriate steps to ensure financial management capacity? Confident Yes (7) - Confident No (1)
+1
+Your cost structure is extremely reasonable. Strongly Agree (7) - Strongly Disagree (1)
+1
+You have the appropriate cash flow management systems and monitoring systems in place. Strongly Agree (7) - Strongly Disagree (1)
+1
+Should your revenues not meet your targets will you experience financial difficulties? Confident Yes (7) - Confident No (1)
+1
+SCALE & IMPACT
+Growth Plan
+Does the team have a clear and manageable growth plan detailing WHAT you are trying to accomplish? Confident Yes (7) - Confident No (1)
+1
+Does the team have a clear and manageable growth plan detailing HOW you are going to accomplish growth? (Specific dates, targets and people) Confident Yes (7) - Confident No (1)
+1
+What happens if your growth plan goes off track ? You definitely know what to do. Confident Yes (7) - Confident No (1)
+1
+Do you have a clear and feasible plan? Confident Yes (7) - Confident No (1)
+1
+There is clear evidence gathered from company data gathered to date. Confident Yes (7) - Confident No (1)
+1
+Your growth plans will continue to allow you to solve the problem better than any other competitor. Confident Yes (7) - Confident No (1)
+1
+Your company growth plans will fundamentally change the customer experience in a way that makes the customer unable to remember what life was like before the company existed? Confident Yes (7) - Confident No (1)
+1
+Your company performance speaks to the validity of your growth plans. Confident Yes (7) - Confident No (1)
+1
+Does the team have a clear and manageable growth plan detailing WHAT you are trying to accomplish? Confident Yes (7) - Confident No (1)
+1
+Does the team have a clear and manageable growth plan detailing HOW you are going to accomplish growth? (Specific dates, targets and people) Confident Yes (7) - Confident No (1)
+1
+What happens if your plan goes off track ? You definitely know what to do. Confident Yes (7) - Confident No (1)
+1
+Is it a clear and feasible plan? Confident Yes (7) - Confident No (1)
+1
+Recurring Customers
+We can sell to customers on a recurring basis. Confident Yes (7) - Confident No (1)
+1
+Is there a positive viral coefficient. Confident Yes (7) - Confident No (1)
+1
+You have the effective customer service, engagement culture and processes to keep customers coming back? Confident Yes (7) - Confident No (1)
+1
+You have strategic plans for building and maintaining customer loyalty. Confident Yes (7) - Confident No (1)
+1
+You currently are serving recurring customers. Confident Yes (7) - Confident No (1)
+1
+Our product/service is so good that customers only need it once. Confident Yes (7) - Confident No (1)
+1
+You have customers returning on their own. Confident Yes (7) - Confident No (1)
+1
+You need to educate your customers to return. Confident Yes (7) - Confident No (1)
+0
+You have the effective customer service, engagement culture and processes to keep customers coming back? Confident Yes (7) - Confident No (1)
+1
+Is there a positive viral coefficient? Confident Yes (7) - Confident No (1)
+1
+You have customers returning on their own.Confident Yes (7) - Confident No (1)
+1
+We offer our products and services in a way that allows for recurring income? Confident Yes (7) - Confident No (1)
+1
+Systems-Level Change
+Does your business change the way that people live? Confident Yes (7) - Confident No (1)
+1
+Will others in the industry or value chain look to this enterprise if successful as a leader or role model? Confident Yes (7) - Confident No (1)
+1
+Does this innovation have the ability to scale sector-wide? (Move to different sectors)Confident Yes (7) - Confident No (1)
+1
+Do you understand who the key role models and leaders are in this space and why? Confident Yes (7) - Confident No (1)
+1
+You have ambitions that are translated into realistic ideas of achieving industry ownership. Confident Yes (7) - Confident No (1)
+1
+Are you going to change the value chain in which you operate? Confident Yes (7) - Confident No (1)
+1
+Do you change customers lives in a way that is sustaining to you, and encourages your own growth? Confident Yes (7) - Confident No (1)
+1
+Will others in the industry or value chain look to this enterprise if successful as a leader or role model? Confident Yes (7) - Confident No (1)
+1
+You have ambitions that are translated into realistic ideas of achieving industry ownership. Confident Yes (7) - Confident No (1)
+1
+Do you understand who the key role models and leaders are in this space and why they are or are not where they are/could have been? Confident Yes (7) - Confident No (1)
+1
+Does your business change the way that people live? Confident Yes (7) - Confident No (1)
+1
+Will others in the industry or value chain look to this enterprise if successful as a leader or role model? Confident Yes (7) - Confident No (1)
+1
+Global social impact
+Is the way that the business creates systems level change improving the lives of customers and improving the world? Confident Yes (7) - Confident No (1)
+1
+Is the systems level change you are achieving directly tied to your business model or more CSI? Confident Yes (7) - Confident No (1)
+1
+If it came down to a trade off between greater profits and positive impact. You would choose greater profits. Confident Yes (7) - Confident No (1)
+0
+Your business has elements of achieving the United Nations Millennium Development Goals of 2015. Confident Yes (7) - Confident No (1)
+1
+There are key operational objectives that are valued by social impact. Confident Yes (7) - Confident No (1)
+1
+As business scales, impact scales directly. Confident Yes (7) - Confident No (1)
+1
+Is the way that the business creates systems level change improving the lives of customers and improving the world? Confident Yes (7) - Confident No (1)
+1
+Is the systems level change you are achieving directly tied to your business model or more CSI ? First Option (7) - Second Option (1)
+1
+If it came down to a trade off between greater profits and positive impact. You would choose greater profits. Confident Yes (7) - Confident No (1)
+1
+Your business has elements of achieving the United Nations Millennium Development Goals of 2015. Confident Yes (7) - Confident No (1)
+1
+There are key operational objectives that are valued by social impact accheived. Confident Yes (7) - Confident No (1)
+1
+Impact in the World Tied to business Model - As business scales, impact scales directly. Confident Yes (7) - Confident No (1)
+1
+RETURN ON CAPITAL
+Market Opportunity
+Does your venture provide compelling evidence that it will be profitable enough to reward investors for risk? Confident Yes (7) - Confident No (1)
+1
+Is target market of the venture large enough to substantiate the ventures profitability projections? Confident Yes (7) - Confident No (1)
+1
+You have clear evidence demonstrating a realistic understanding of what it would take to capture sufficient market share in your target market? Confident Yes (7) - Confident No (1)
+1
+You have data and evidence of how revenue will exceed costs at an eventually attractive profit margin. Confident Yes (7) - Confident No (1)
+1
+Market indicators are NOT pointing in your favour of a real opportunity. Strongly Agree (7) - Strongly Disagree (1)
+0
+With the evidence collected you hand over documents to a competitor for them to gain funding based on your findings. Confident Yes (7) - Confident No (1)
+1
+You would risk your own capital and that of your family/close friends based on the findings you have. Confident Yes (7) - Confident No (1)
+1
+The opportunity grows with scale. Confident Yes (7) - Confident No (1)
+1
+You have clear evidence demonstrating a realistic understanding of what it would take to capture sufficient market share in your target market?
+Confident Yes (7) - Confident No (1)
+Does your venture provide compelling evidence that it will be profitable enough to reward investors for risk? Confident Yes (7) - Confident No (1)
+1
+Is target market of the venture large enough to substantiate the ventures profitability projections? Confident Yes (7) - Confident No (1)
+1
+Market indicators are pointing in your favor of a real opportunity. Confident Yes (7) - Confident No (1)
+1
+Appropriate Capital
+Is the team seeking the right amount of capital to reach key milestones OR to pass checkpoints in order to achieve follow on investment? OR achieve self-sustainability? Confident Yes (7) - Confident No (1)
+1
+The team has a credible understanding of the key milestones to achieve capital and grow to sustainability. Confident Yes (7) - Confident No (1)
+1
+If you received money today, you understand how you would use it and where it would take you. Confident Yes (7) - Confident No (1)
+1
+You have a clear understanding of how to use proceeds to reach self-sufficiency or follow on capital. Confident Yes (7) - Confident No (1)
+1
+Is the team seeking the right amount of capital to reach key milestones OR to pass checkpoints in order to achieve follow on investment? OR achieve self-sustainability? Confident Yes (7) - Confident No (1)
+1
+The team has a credible understanding of the key milestones to achieve capital and grow to sustainability. Confident Yes (7) - Confident No (1)
+1
+If you received money today, you understand how you would use it and where it would take you. Confident Yes (7) - Confident No (1)
+1
+You have a clear understanding of how to use proceeds to reach self-sufficiency or follow on capital. Confident Yes (7) - Confident No (1)
+1
+Is the team seeking the right amount of capital to reach key milestones OR to pass checkpoints in order to achieve follow on investment? OR achieve self-sustainability? Confident Yes (7) - Confident No (1)
+1
+The team has a credible understanding of the key milestones to achieve capital and grow to sustainability. Confident Yes (7) - Confident No (1)
+1
+If you received money today, you understand how you would use it and where it would take you. Confident Yes (7) - Confident No (1)
+1
+You have a clear understanding of how to use proceeds to reach self-sufficiency or follow on capital. Confident Yes (7) - Confident No (1)
+1
+Investor Liquidity
+Has your startup developed a solid case for how you will return actual liquid cash to investors? Confident Yes (7) - Confident No (1)
+1
+Assuming you wanted to raise equity or a convertible debt, you can or have developed a realistic strategy for acquisition, IPO or share buyback? Confident Yes (7) - Confident No (1)
+1
+You have developed a compelling alternative strategy for paying back investors? Confident Yes (7) - Confident No (1)
+1
+You have relevant examples of providing liquidity to investors. Confident Yes (7) - Confident No (1)
+1
+You have chosen an appropriate investment structure for your business model. Confident Yes (7) - Confident No (1)
+1
+Your ask and your situation for returning capital has comparable scenarios from similar companies. Confident Yes (7) - Confident No (1)
+1
+Has your startup developed a solid case for how you will return actual liquid cash to investors? Confident Yes (7) - Confident No (1)
+1
+Assuming you wanted to raise equity or a convertible debt, you can or have developed a realistic strategy for acquisition, IPO or share buyback? Confident Yes (7) - Confident No (1)
+1
+You have developed a compelling alternative strategy for paying back investors? Confident Yes (7) - Confident No (1)
+1
+You have relevant examples of providing liquidity to investors. Confident Yes (7) - Confident No (1)
+1
+You have chosen an appropriate investment structure for your business model. Confident Yes (7) - Confident No (1)
+1
+Your ask and your situation for returning capital has comparable scenarios from similar companies. Confident Yes (7) - Confident No (1)
+1
+Catastrophic Risks
+Has the team appropriately assessed market fundamentals? (How the market behaves) Confident Yes (7) - Confident No (1)
+1
+Has the team appropriately assess regulatory risks or external factors that could make the market unprofitable? Confident Yes (7) - Confident No (1)
+1
+Has the team laid out clear assumptions of what needs to go right in order for the team to be successful? Confident Yes (7) - Confident No (1)
+1
+Has the team laid out ideas of back-up and exit plans? Confident Yes (7) - Confident No (1)
+1
+Look for a base variation of your product or service that exists in the market and understand its risks. Do their risks relate to you? Confident Yes (7) - Confident No (1)
+0
+Has the team appropriately assessed market fundamentals? (How the market behaves) Confident Yes (7) - Confident No (1)
+1
+Has the team appropriately assess regulatory risks or external factors that could make the market unprofitable? Confident Yes (7) - Confident No (1)
+1
+Has the team laid out clear assumptions of what needs to go right in order for the team to be successful? Confident Yes (7) - Confident No (1)
+1
+Has the team laid out ideas of back-up and exit plans? Confident Yes (7) - Confident No (1)
+1
+Look for a base variation of your product or service that exists in the market and understand its risks. Do their risks relate to you? Confident Yes (7) - Confident No (1)
+0
+Has the team appropriately assessed market fundamentals? (How the market behaves) Confident Yes (7) - Confident No (1)
+1
+Has the team appropriately assess regulatory risks or external factors that could make the market unprofitable? Confident Yes (7) - Confident No (1)
 1

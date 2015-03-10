@@ -98,8 +98,14 @@
     [viewButton addTarget:self action:@selector(viewButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:viewButton];
     
-    UIButton* infoButton = [UIButton buttonWithType:UIButtonTypeInfoLight];
-    [infoButton setFrame:CGRectMake(0,0,30,30)];
+    UIImageView* infoImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0,0,30,30)];
+    [infoImageView setImage:[UIImage imageNamed:@"info icon.png"]];
+    infoImageView.center = CGPointMake(30, self.view.frame.size.height -30);
+    [self.view addSubview:infoImageView];
+    
+    UIButton* infoButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    infoButton.frame = CGRectMake(0,0,30,30);
+    infoButton.backgroundColor = [UIColor clearColor];
     infoButton.center = CGPointMake(30, self.view.frame.size.height -30);
     [infoButton addTarget:self action:@selector(infoButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:infoButton];

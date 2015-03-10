@@ -294,24 +294,24 @@
 {
     [self.view endEditing:YES];
     
-#if !DEBUG
-    for (int i = 0; i < fields.count; ++i)
-    {
-        UITextField* textField = fields[i];
-        NSString* key = keys[i];
-        if ([key isEqualToString:kKeyDetails]) {
-            //ignore details field
-            continue;
-        }
-        
-        if ([textField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]].length == 0)
-        {
-            self.view.userInteractionEnabled = YES;
-            [[[UIAlertView alloc] initWithTitle:nil message:@"Some information is missing" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
-            return;
-        }
-    }
-#endif
+//#if !DEBUG
+//    for (int i = 0; i < fields.count; ++i)
+//    {
+//        UITextField* textField = fields[i];
+//        NSString* key = keys[i];
+//        if ([key isEqualToString:kKeyDetails]) {
+//            //ignore details field
+//            continue;
+//        }
+//        
+//        if ([textField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]].length == 0)
+//        {
+//            self.view.userInteractionEnabled = YES;
+//            [[[UIAlertView alloc] initWithTitle:nil message:@"Some information is missing" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
+//            return;
+//        }
+//    }
+//#endif
 
 //    fields = @[field1,field2,field3,field4,field5,field6];
     SignUpInfo* signUpInfo = [[SignUpInfo alloc] init];
@@ -455,6 +455,11 @@
     } else if (pickerView == filed6Picker) {
         field6.text = filed6PickerData[row];
     }
+}
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    [scrollView setContentOffset:CGPointMake(0, CGRectGetMinY(textField.frame) - 25 - 45) animated:YES];
 }
 
 @end

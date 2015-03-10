@@ -64,6 +64,7 @@
     textView1.scrollEnabled = YES;
     textView1.layer.borderColor = [UIColor whiteColor].CGColor;
     textView1.layer.borderWidth = 2.0f;
+    textView1.delegate = self;
     textView1.font = [UIFont systemFontOfSize:14.0f];
     textView1.backgroundColor = [UIColor clearColor];
     [scrollView addSubview:textView1];
@@ -80,6 +81,7 @@
     textView2.font = [UIFont systemFontOfSize:14.0f];
     textView2.layer.borderColor = [UIColor whiteColor].CGColor;
     textView2.layer.borderWidth = 2.0f;
+    textView2.delegate = self;
     textView2.backgroundColor = [UIColor clearColor];
     [scrollView addSubview:textView2];
     
@@ -95,6 +97,7 @@
     textView3.font = [UIFont systemFontOfSize:14.0f];
     textView3.layer.borderColor = [UIColor whiteColor].CGColor;
     textView3.layer.borderWidth = 2.0f;
+    textView3.delegate = self;
     textView3.backgroundColor = [UIColor clearColor];
     [scrollView addSubview:textView3];
     
@@ -140,7 +143,7 @@
     
     UIButton* cancelButton = [UIButton buttonWithType:UIButtonTypeCustom];
     cancelButton.titleLabel.font = [UIFont systemFontOfSize:16.0f];
-    [cancelButton setTitle:@"Submit" forState:UIControlStateNormal];
+    [cancelButton setTitle:@"Exit Boardroom" forState:UIControlStateNormal];
     
     [cancelButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [cancelButton setTitleColor:[UIColor grayColor] forState:UIControlStateHighlighted];
@@ -173,8 +176,8 @@
     endQ.problem = textView1.text;
     endQ.reasons = textView2.text;
     endQ.question = textView3.text;
-    endQ.difficulty = [NSString stringWithFormat:@"%li", segmentedControl1.selectedSegmentIndex+1];
-    endQ.urgency = [NSString stringWithFormat:@"%li", segmentedControl2.selectedSegmentIndex+1];
+    endQ.difficulty = [NSString stringWithFormat:@"%i", segmentedControl1.selectedSegmentIndex+1];
+    endQ.urgency = [NSString stringWithFormat:@"%i", segmentedControl2.selectedSegmentIndex+1];
     
     [endQuestionsCollection.questions addObject:endQ];
     
@@ -184,10 +187,13 @@
     segmentedControl1.selectedSegmentIndex = -1;
     segmentedControl2.selectedSegmentIndex = -1;
     
+    [scrollView setContentOffset: CGPointMake(0, -scrollView.contentInset.top) animated:YES];
+    
     [[[UIAlertView alloc] initWithTitle:nil message:@"Question saved" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
 }
 -(void)doneButtonClicked:(UIButton*)sender
 {
+    
     [self.view endEditing:YES];
     
     EndQuestion* endQ = [[EndQuestion alloc] init];
@@ -195,8 +201,8 @@
     endQ.problem = textView1.text;
     endQ.reasons = textView2.text;
     endQ.question = textView3.text;
-    endQ.difficulty = [NSString stringWithFormat:@"%li", segmentedControl1.selectedSegmentIndex+1];
-    endQ.urgency = [NSString stringWithFormat:@"%li", segmentedControl2.selectedSegmentIndex+1];
+    endQ.difficulty = [NSString stringWithFormat:@"%i", segmentedControl1.selectedSegmentIndex+1];
+    endQ.urgency = [NSString stringWithFormat:@"%i", segmentedControl2.selectedSegmentIndex+1];
     
     [endQuestionsCollection.questions addObject:endQ];
     
@@ -208,7 +214,8 @@
         {
             MFMailComposeViewController *mailViewController = [[MFMailComposeViewController alloc] init];
             mailViewController.mailComposeDelegate = self;
-            [mailViewController setToRecipients:@[@"rindopuz23@gmail.com"]];
+            [mailViewController setToRecipients:@[@"jason@gob2b.ca"]];
+//            [mailViewController setToRecipients:@[@"rindopuz23@gmail.com"]];
             [mailViewController setSubject:@"GOB2B Results"];
             NSData* data = [DataFactory prepareDataForMail];
             if (data!=nil) {
@@ -225,6 +232,8 @@
     
     
 }
+
+
 
 -(void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
 {
@@ -277,6 +286,7 @@
     [UIView commitAnimations];
     keyboardIsShown = YES;
 }
+
 -(void)viewWillAppear:(BOOL)animated {
     // register for keyboard notifications
     [[NSNotificationCenter defaultCenter] addObserver:self
@@ -302,5 +312,8 @@
                                                   object:nil];
 }
 
+- (void)textViewDidBeginEditing:(UITextView *)textView {
+    [scrollView setContentOffset:CGPointMake(0, CGRectGetMinY(textView.frame)-25-45) animated:YES];
+}
 
 @end

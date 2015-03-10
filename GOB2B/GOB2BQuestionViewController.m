@@ -39,9 +39,16 @@
 {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor colorWithRed:0.890f green:0.890f blue:0.890f alpha:1.00f];
-    
-    UITextView* textView1 = [[UITextView alloc] initWithFrame:CGRectMake(10, 20, self.view.frame.size.width-20, 200)];
     Question* question = mQuestions[mQIndex];
+    
+    UILabel* subcat = [[UILabel alloc] initWithFrame:CGRectMake(10, 25, self.view.frame.size.width-20, 20)];
+    subcat.text = question.subcat;
+    subcat.backgroundColor = [UIColor clearColor];
+    subcat.textAlignment = NSTextAlignmentCenter;
+    subcat.font = [UIFont systemFontOfSize:18.0f];
+    [self.view addSubview:subcat];
+    
+    UITextView* textView1 = [[UITextView alloc] initWithFrame:CGRectMake(10, CGRectGetMaxY(subcat.frame)+5, self.view.frame.size.width-20, 200)];
     textView1.textContainerInset = UIEdgeInsetsZero;
     textView1.textContainer.lineFragmentPadding = 0;
     textView1.text = question.text;

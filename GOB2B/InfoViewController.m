@@ -25,7 +25,13 @@
     scrollView.backgroundColor = [UIColor clearColor];
     [self.view addSubview:scrollView];
     
-    UITextView* textView1 = [[UITextView alloc] initWithFrame:CGRectMake(10, 0, self.view.frame.size.width-20, 100)];
+    UIImageView* logoView = [[UIImageView alloc] initWithFrame:CGRectMake(self.view.frame.size.width - 150, 5, 140, 50)];
+    logoView.backgroundColor = [UIColor clearColor];
+    logoView.contentMode = UIViewContentModeScaleAspectFit;
+    [logoView setImage:[UIImage imageNamed:@"GOB2B LOGO CORRECT.png"]];
+    [scrollView addSubview:logoView];
+    
+    UITextView* textView1 = [[UITextView alloc] initWithFrame:CGRectMake(10, CGRectGetMaxY(logoView.frame), self.view.frame.size.width-20, 100)];
     textView1.text = @"We get to know you and your startup. We are interested in where you are on your startup journey. Still in the basement or just outside the boardroom?";
     textView1.userInteractionEnabled = NO;
     textView1.scrollEnabled = NO;

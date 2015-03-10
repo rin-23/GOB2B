@@ -65,6 +65,7 @@
     textView1.scrollEnabled = YES;
     textView1.layer.borderColor = [UIColor whiteColor].CGColor;
     textView1.layer.borderWidth = 2.0f;
+    textView1.delegate = self;
     textView1.font = [UIFont systemFontOfSize:14.0f];
     textView1.backgroundColor = [UIColor clearColor];
     [scrollView addSubview:textView1];
@@ -78,6 +79,7 @@
     
     textView2 = [[UITextView alloc] initWithFrame:CGRectMake(60, CGRectGetMaxY(label2.frame), self.view.frame.size.width-120, 100)];
     textView2.scrollEnabled = YES;
+    textView2.delegate = self;
     textView2.font = [UIFont systemFontOfSize:14.0f];
     textView2.layer.borderColor = [UIColor whiteColor].CGColor;
     textView2.layer.borderWidth = 2.0f;
@@ -149,8 +151,8 @@
     
     goal.goal = textView1.text;
     goal.reasons = textView2.text;
-    goal.difficulty = [NSString stringWithFormat:@"%li", segmentedControl1.selectedSegmentIndex+1];
-    goal.urgency = [NSString stringWithFormat:@"%li", segmentedControl2.selectedSegmentIndex+1];
+    goal.difficulty = [NSString stringWithFormat:@"%i", segmentedControl1.selectedSegmentIndex+1];
+    goal.urgency = [NSString stringWithFormat:@"%i", segmentedControl2.selectedSegmentIndex+1];
 
     [goalsCollection.goals addObject:goal];
     
@@ -158,7 +160,9 @@
     textView2.text = @"";
     segmentedControl1.selectedSegmentIndex = -1;
     segmentedControl2.selectedSegmentIndex = -1;
-    
+
+    [scrollView setContentOffset: CGPointMake(0, -scrollView.contentInset.top) animated:YES];
+
     [[[UIAlertView alloc] initWithTitle:nil message:@"Goal saved" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
 }
 
@@ -169,8 +173,8 @@
     OrgGoal* goal = [[OrgGoal alloc] init];
     goal.goal = textView1.text;
     goal.reasons = textView2.text;
-    goal.difficulty = [NSString stringWithFormat:@"%li", segmentedControl1.selectedSegmentIndex+1];
-    goal.urgency = [NSString stringWithFormat:@"%li", segmentedControl2.selectedSegmentIndex+1];
+    goal.difficulty = [NSString stringWithFormat:@"%i", segmentedControl1.selectedSegmentIndex+1];
+    goal.urgency = [NSString stringWithFormat:@"%i", segmentedControl2.selectedSegmentIndex+1];
     [goalsCollection.goals addObject:goal];
     
     
@@ -262,5 +266,10 @@
                                                     name:UIKeyboardWillHideNotification
                                                   object:nil];
 }
+
+- (void)textViewDidBeginEditing:(UITextView *)textView {
+    [scrollView setContentOffset:CGPointMake(0, CGRectGetMinY(textView.frame)-25-45) animated:YES];
+}
+
 
 @end
