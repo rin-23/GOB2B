@@ -13,6 +13,7 @@
 #include "GOB2BQuestionViewController.h"
 #include "GOB2BQuestions.h"
 #include "DataFactory.h"
+#include "ResultsViewController.h"
 
 @interface StartupViewController ()
 {
@@ -67,7 +68,6 @@
     signupButton.layer.borderColor = [UIColor whiteColor].CGColor;
     signupButton.layer.borderWidth = 2.0f;
     [signupButton addTarget:self action:@selector(signupButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
-    [signupButton addTarget:self action:@selector(signupButtonClickedDown:) forControlEvents:UIControlEventTouchDown];
     [self.view addSubview:signupButton];
 
     beginButton = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -82,8 +82,6 @@
     beginButton.layer.borderColor = [UIColor whiteColor].CGColor;
     beginButton.layer.borderWidth = 2.0f;
     [beginButton addTarget:self action:@selector(beginButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
-    [beginButton addTarget:self action:@selector(beginButtonClickedDown:) forControlEvents:UIControlEventTouchDown];
-
     [self.view addSubview:beginButton];
     
     viewButton = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -98,7 +96,6 @@
     viewButton.layer.borderColor = [UIColor whiteColor].CGColor;
     viewButton.layer.borderWidth = 2.0f;
     [viewButton addTarget:self action:@selector(viewButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
-    [viewButton addTarget:self action:@selector(viewButtonClickedDown:) forControlEvents:UIControlEventTouchDown];
     [self.view addSubview:viewButton];
     
     UIButton* infoButton = [UIButton buttonWithType:UIButtonTypeInfoLight];
@@ -152,18 +149,15 @@
     [self presentViewController:navVC animated:YES completion:nil];
 }
 
--(void)signupButtonClickedDown:(UIButton*)sender
-{
-//    sender.layer.borderColor = [UIColor grayColor].CGColor;
-}
-
 -(void)viewButtonClicked:(UIButton*)sender
 {
-//    sender.layer.borderColor = [UIColor whiteColor].CGColor;
-}
-
--(void)viewButtonClickedDown:(UIButton*)sender {
-//    sender.layer.borderColor = [UIColor grayColor].CGColor;
+    ResultsViewController* resultsVC = [[ResultsViewController alloc] init];
+    UINavigationController* navVC = [[UINavigationController alloc] initWithRootViewController:resultsVC];
+    navVC.navigationBarHidden = NO;
+    navVC.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+    [resultsVC.navigationItem setRightBarButtonItem:[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(dismissInfoModalController:)]];
+    
+    [self presentViewController:navVC animated:YES completion:nil];
 }
 
 -(void)infoButtonClicked:(UIButton*)sender

@@ -1,4 +1,4 @@
-//
+    //
 //  QuestionFactory.m
 //  GOB2B
 //
@@ -27,7 +27,7 @@
     NSArray* components = [content componentsSeparatedByCharactersInSet:[NSCharacterSet newlineCharacterSet]];
     
     int index = 0;
-    int kNumOfTeams = 1;
+    int kNumOfTeams = 3;
     for (int i = 0; i < kNumOfTeams; ++i)
     {
         Group* group = [[Group alloc] init];;

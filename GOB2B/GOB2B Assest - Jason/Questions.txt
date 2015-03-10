@@ -99,3 +99,205 @@ Do you feel there is ever a time to  stop iterating your solutions from feedbac
 1
 Think of 3 things you are grateful for. Is your teams ability to connect frequently with your target customer one of them? Confident Yes (7) - Confident No (1)
 1
+PRODUCT/SERVICES
+Functionality
+Does the product/service have the capacity to deliver intuitively the target solution to customer? Confident Yes (7) - Confident No (1)
+1
+You are faced with the decision of launching your excellently thought out product or service and not charging your customer to allow more users in future versus costing it up front and limiting the potential growth of users but make a revenue now? Do you launch it free or price it? Free (7) - Price it (1)
+0
+You strongly believe that you are working on something that has never been done before? Confident Yes (7) - Confident No (1)
+1
+Does the product/service have the capacity to deliver intuitively the target solution to customer? Confident Yes (7) - Confident No (1)
+1
+You can clearly say that your product/service meets your customers needs? Confident Yes (7) - Confident No (1)
+1
+The likelihood of your  product/service breaking down or failing. Highly Likely (7) - Highly Unlikely (1)
+0
+How durable and repeatedly usable without extensive servicing requirements is your product/service? Highly Likely (7) - Highly Unlikely (1)
+1
+How right is your solution for the customers problems? Highly Likely (7) - Highly Unlikely (1)
+1
+How likely is your customer to recommend your product/service through their networks? Highly Likely (7) - Highly Unlikely (1)
+1
+The product/service delivers on customer expectations? Highly Likely (7) - Highly Unlikely (1)
+1
+Does your product/service functionality reflect your vision? Confident Yes (7) - Confident No (1)
+1
+Does your product/service functionality reflect your vision? Confident Yes (7) - Confident No (1)
+1
+Implementation
+The risk around the technology used is negligible. Strongly Agree (7) - Strongly Disagree (1)
+1
+The technology on your product/ service is deemed unsafe and a hazard. Do you make a recall on the product/service with the clear understanding that reputation damage suffered could effectively shut down your business or turn a blind eye and hope for the best? First Option (7) - Second Option (1)
+1
+The technology used in the formation of your product/service works consistently. Strongly Agree (7) - Strongly Disagree (1)
+1
+Do you have a clear idea of how to deliver your product and service to your customers ? Confident Yes (7) - Confident No (1)
+1
+While solving one problem, your product creates another problem. Do you continue to solve the problem because you believe you can solve all problems? Confident Yes (7) - Confident No (1)
+1
+Will your product/service require an established post-sales support? Confident Yes (7) - Confident No (1)
+0
+The product / service works consistently. Strongly Agree (7) - Strongly Disagree (1)
+1
+Selling the product is more important than the risk it carries. Strongly Agree (7) - Strongly Disagree (1)
+0
+Can you effectively handle product/service delivery repeatedly at high volume? Confident Yes (7) - Confident No (1)
+1
+Does your product/service implementation reflect positively on your company image and brand? Is it the best possible way to do it? Confident Yes (7) - Confident No (1)
+1
+The technology used in the formation of your product/service works consistently. Strongly Agree (7) - Strongly Disagree (1)
+1
+Do you have a clear idea of how to deliver your product and service to your customers ? Confident Yes (7) - Confident No (1)
+1
+User Experience
+Is your user experience intuitive enough to the customer in a way that they will use your product/service correctly? Confident Yes (7) - Confident No (1)
+1
+It is okay if users do not complain about the UX and are buying the product but you know it could be better. Strongly Agree (7) - Strongly Disagree (1)
+0
+You are solving the pain of the customer though your product/service offering exceptionally well. Strongly Agree (7) - Strongly Disagree (1)
+1
+Are customers willing to advocate your product? Confident Yes (7) - Confident No (1)
+1
+Do customers react positively to the user experience in a way that they want to come back? Confident Yes (7) - Confident No (1)
+1
+You original design was loved by customers. You change the UX to be better in your eyes and offer more features and your customers complain. Do roll back the UX? Or stick to your changes that could make you more money in the future. Option 1 (7) - Option 2 (1)
+1
+Is a large amount of your interaction with customers spent explaining how to use the product/ service? Confident Yes (7) - Confident No (1)
+0
+Does your customer feel that the product is not worth the cost? Confident Yes (7) - Confident No (1)
+0
+You spend more time pacifying frustrated customers them than designing for them. Strongly Agree (7) - Strongly Disagree (1)
+0
+Customers require significant amount of convincing for adoption. Strongly Agree (7) - Strongly Disagree (1)
+0
+Does your product/service user experience reflect your vision and mission? Confident Yes (7) - Confident No (1)
+1
+Is your user experience intuitive enough to the customer in a way that they will use your product/service correctly? Confident Yes (7) - Confident No (1)
+1
+Value Chain Loops
+You are clearly aware of your value-chain and can flawlessly describe it when asked. Strongly Agree (7) - Strongly Disagree (1)
+1
+Copying someone's Value Chain is ok if you have high barriers to entry for your competitors? Strongly Agree (7) - Strongly Disagree (1)
+1
+Has the team illustrated how the product/service sufficiently transforms the value chain in which they operate? Confident Yes (7) - Confident No (1)
+1
+Does your product or service completely transform the market or is it a “me too” type of solution? Option 1 (7) - Option 2 (1)
+1
+Does your product/ service have a differentiator? You have high barriers-to-entry for your competition? Confident Yes (7) - Confident No (1)
+1
+Solutions are iterated based on customer feedback? Confident Yes (7) - Confident No (1)
+1
+You iterate a solution and it is wrong. Do you quit? Confident Yes (7) - Confident No (1)
+0
+Is your value hard to understand? Confident Yes (7) - Confident No (1)
+0
+Does your product/service value chain reflect your vision? Confident Yes (7) - Confident No (1)
+1
+You are clearly aware of your value-chain and can flawlessly describe it when asked. Strongly Agree (7) - Strongly Disagree (1)
+1
+Does your product or service completely transform the market or is it a “me too” type of solution? Option 1 (7) - Option 2 (1)
+1
+Solutions are iterated based on customer feedback? Confident Yes (7) - Confident No (1)
+1
+CUSTOMER VALIDATION
+Value Proposition
+Have you created a viable and testable hypothesis? Confident Yes (7) - Confident No (1)
+1
+If another competitor develops an identical value proposition would you be able to survive in the market based on the Customer Validation you have now? Confident Yes (7) - Confident No (1)
+1
+Have you clearly identified a large and important enough problem that you are trying to solve and the customers who have this problem? Confident Yes (7) - Confident No (1)
+1
+Have you clearly identified and understood how your product/service meets your customers pain points? Confident Yes (7) - Confident No (1)
+1
+The problem you solve is a number 1 priority for those face it. Strongly Agree (7) - Strongly Disagree No (1)
+1
+Other startups are solving your customers problems better than you by delivering more value to them. How willing would you be to search for differentiators considering it is a time and cost expense? Extremely Willing (7) - Extremely unwilling (1)
+0
+Value Proposition - You are trying to convince a customer of a problem that they do not primarily experience. Strongly Agree (7) - Strongly Disagree No (1)
+0
+You are a company with a product/service looking for a customer with a problem to solve. Strongly Agree (7) - Strongly Disagree No (1)
+0
+Is it okay to have a product and look for a customer? Confident Yes (7) - Confident No (1)
+1
+You have a clear identification of people who will pay for this product/service. Confident Yes (7) - Confident No (1)
+1
+Does your value solve real pain points for the customer? Confident Yes (7) - Confident No (1)
+1
+You have established your viable and testable hypothesis? Confident Yes (7) - Confident No (1)
+1
+Evidence Quality
+You have measures in place that allow for the iteration and evolution of your product/service solution development based on customer interaction? Confident Yes (7) - Confident No (1)
+1
+It is okay to establish evidence on intuition? Confident Yes (7) - Confident No (1)
+0
+You have a clear defined path of collecting data and validating hypothesis. Strongly Agree (7) - Strongly Disagree No (1)
+1
+The team often interacts with customers? Confident Yes (7) - Confident No (1)
+1
+In the absence of time to establish evidence are you more likely to seek advice or go with intuition ? Option 1 (7) - 2 (1)
+1
+Do you have a clear system to allow you and your team to learn from customers? Confident Yes (7) - Confident No (1)
+1
+Steve Jobs knew about products that the market needed even before they needed them. Do you believe you know about what your customer needs before they know it? Confident Yes (7) - Confident No (1)
+1
+You can clearly say that your data and research gathered supports that you are able to meet your customers needs? Confident Yes (7) - Confident No (1)
+1
+It is alright to convince a customer of what he needs before he needs it? Confident Yes (7) - Confident No (1)
+1
+Your product/solution meets more of a demand than more of a need. Confident Yes (7) - Confident No (1)
+0
+You can state clear changes based on recorded data? Confident Yes (7) - Confident No (1)
+1
+You have a clear defined path of collecting data and validating hypothesis. Strongly Agree (7) - Strongly Disagree No (1)
+1
+Demand Response
+Do you have tangible experience with your customer that can validate your customer choice? Confident Yes (7) - Confident No (1)
+1
+In certain cases it is better to take intuition over the customer words? Confident Yes (7) - Confident No (1)
+0
+Is there a clear focus on what customers want and how to meet their needs? Confident Yes (7) - Confident No (1)
+1
+You could demonstrate evidence of how the product/service is evolving with customers over time ? Confident Yes (7) - Confident No (1)
+1
+You are willing to do anything to chase customers. Strongly Agree (7) - Strongly Disagree No (1)
+0
+Are your teams and customers learning together? Confident Yes (7) - Confident No (1)
+1
+You can demonstrate evidence of how the product/service is in demand? Confident Yes (7) - Confident No (1)
+1
+Having a slightly less focus (market scanning) to obtain several customers is better than having traction with one customer. Strongly Agree (7) - Strongly Disagree No (1).
+0
+Your team actively changing its hypothesis or testing multiple ones. Strongly Agree (7) - Strongly Disagree No (1)
+1
+Customers clearly understand the value delivered? Confident Yes (7) - Confident No (1)
+1
+You could demonstrate evidence of how the product/service is evolving with customers over time ? Confident Yes (7) - Confident No (1)
+1
+Is there a clear focus on what customers want and how to meet their needs? Confident Yes (7) - Confident No (1)
+1
+Customer Capacity
+Do target customers have the means and abilities to see the full value and there no links missing in-between such as infrastructure, awareness? Confident Yes (7) - Confident No (1)
+1
+You are quickly and effectively able to identify and sort out viable customers? Confident Yes (7) - Confident No (1)
+1
+Do the macro-level factors in the market create conditions for an entrepreneur and business model to enter? Confident Yes (7) - Confident No (1)
+1
+You will wait for the right market conditions before experimenting? Confident Yes (7) - Confident No (1)
+0
+You believe that you would do better if you were in a different market place? Confident Yes (7) - Confident No (1)
+0
+You have long sales cycles ? Confident Yes (7) - Confident No (1)
+0
+A customer is no longer my customer when they do not see the benefits I am offering? Confident Yes (7) - Confident No (1)
+1
+Your customers know very well the benefits you are offering them? Confident Yes (7) - Confident No (1)
+1
+Does your team often have to prod customers for responses? Confident Yes (7) - Confident No (1)
+0
+Do target customers have the means and abilities to see the full value and there no links missing in-between such as infrastructure, awareness? Confident Yes (7) - Confident No (1)
+1
+You are quickly and effectively able to identify and sort out viable customers? Confident Yes (7) - Confident No (1)
+1
+Do the macro-level factors in the market create conditions for an entrepreneur and business model to enter? Confident Yes (7) - Confident No (1)
+1

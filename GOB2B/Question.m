@@ -60,4 +60,17 @@
     }
 }
 
+-(int)getAdjustedScore
+{
+    if (self.score == 0) {
+        return 0;
+    }
+    
+    if (self.is7Max) {
+        return self.score;
+    } else {
+        return 8 - self.score;
+    }
+}
+
 @end

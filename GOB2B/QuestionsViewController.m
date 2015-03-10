@@ -173,8 +173,8 @@
     endQ.problem = textView1.text;
     endQ.reasons = textView2.text;
     endQ.question = textView3.text;
-    endQ.difficulty = [NSString stringWithFormat:@"%i", segmentedControl1.selectedSegmentIndex+1];
-    endQ.urgency = [NSString stringWithFormat:@"%i", segmentedControl2.selectedSegmentIndex+1];
+    endQ.difficulty = [NSString stringWithFormat:@"%li", segmentedControl1.selectedSegmentIndex+1];
+    endQ.urgency = [NSString stringWithFormat:@"%li", segmentedControl2.selectedSegmentIndex+1];
     
     [endQuestionsCollection.questions addObject:endQ];
     
@@ -195,11 +195,10 @@
     endQ.problem = textView1.text;
     endQ.reasons = textView2.text;
     endQ.question = textView3.text;
-    endQ.difficulty = [NSString stringWithFormat:@"%i", segmentedControl1.selectedSegmentIndex+1];
-    endQ.urgency = [NSString stringWithFormat:@"%i", segmentedControl2.selectedSegmentIndex+1];
+    endQ.difficulty = [NSString stringWithFormat:@"%li", segmentedControl1.selectedSegmentIndex+1];
+    endQ.urgency = [NSString stringWithFormat:@"%li", segmentedControl2.selectedSegmentIndex+1];
     
     [endQuestionsCollection.questions addObject:endQ];
-    
     
     if (![DataFactory writeEndQuestionsCollectionToCahce:endQuestionsCollection]) {
         NSLog(@"[ERROR] Didnt save data");

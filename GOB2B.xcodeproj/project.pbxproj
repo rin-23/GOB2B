@@ -22,6 +22,7 @@
 		15531D971AABADC8009ADC38 /* Stairs Germany.png in Resources */ = {isa = PBXBuildFile; fileRef = 15531D8F1AABADC8009ADC38 /* Stairs Germany.png */; };
 		15531D9A1AABAE16009ADC38 /* GOB2B - Text.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 15531D991AABAE16009ADC38 /* GOB2B - Text.rtf */; };
 		15531D9F1AABB305009ADC38 /* Graph.png in Resources */ = {isa = PBXBuildFile; fileRef = 15531D9E1AABB305009ADC38 /* Graph.png */; };
+		1561E5E01AAF70E100BE92A3 /* Questions.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1561E5DF1AAF70E100BE92A3 /* Questions.txt */; };
 		1567A6581AABB8720046B26C /* ranking.png in Resources */ = {isa = PBXBuildFile; fileRef = 1567A6571AABB8720046B26C /* ranking.png */; };
 		1567A65B1AABBE370046B26C /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1567A65A1AABBE370046B26C /* SignupViewController.m */; };
 		1567A65E1AABC3AB0046B26C /* GOUITextFiled.m in Sources */ = {isa = PBXBuildFile; fileRef = 1567A65D1AABC3AB0046B26C /* GOUITextFiled.m */; };
@@ -38,9 +39,11 @@
 		1567A6841AADD8CF0046B26C /* EndQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 1567A6831AADD8CF0046B26C /* EndQuestion.m */; };
 		1567A6871AADDA570046B26C /* OrgGoalsCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 1567A6861AADDA570046B26C /* OrgGoalsCollection.m */; };
 		1567A68F1AADDC540046B26C /* EndQuestionsCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 1567A68E1AADDC540046B26C /* EndQuestionsCollection.m */; };
-		1567A6911AAE1F910046B26C /* Questions.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1567A6901AAE1F910046B26C /* Questions.txt */; };
 		1567A6941AAE49FD0046B26C /* QuestionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1567A6931AAE49FD0046B26C /* QuestionsViewController.m */; };
 		1567A6961AAE61010046B26C /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1567A6951AAE61010046B26C /* MessageUI.framework */; };
+		1567A69A1AAE87FC0046B26C /* ResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1567A6991AAE87FC0046B26C /* ResultsViewController.m */; };
+		1567A69D1AAE88270046B26C /* GroupResultView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1567A69C1AAE88270046B26C /* GroupResultView.m */; };
+		1567A6A01AAE8B790046B26C /* Indicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1567A69F1AAE8B790046B26C /* Indicator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +67,7 @@
 		15531D8F1AABADC8009ADC38 /* Stairs Germany.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Stairs Germany.png"; sourceTree = "<group>"; };
 		15531D991AABAE16009ADC38 /* GOB2B - Text.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "GOB2B - Text.rtf"; sourceTree = "<group>"; };
 		15531D9E1AABB305009ADC38 /* Graph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Graph.png; sourceTree = "<group>"; };
+		1561E5DF1AAF70E100BE92A3 /* Questions.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Questions.txt; sourceTree = "<group>"; };
 		1567A6571AABB8720046B26C /* ranking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ranking.png; sourceTree = "<group>"; };
 		1567A6591AABBE370046B26C /* SignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignupViewController.h; sourceTree = "<group>"; };
 		1567A65A1AABBE370046B26C /* SignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignupViewController.m; sourceTree = "<group>"; };
@@ -95,10 +99,15 @@
 		1567A6861AADDA570046B26C /* OrgGoalsCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrgGoalsCollection.m; sourceTree = "<group>"; };
 		1567A68D1AADDC540046B26C /* EndQuestionsCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EndQuestionsCollection.h; sourceTree = "<group>"; };
 		1567A68E1AADDC540046B26C /* EndQuestionsCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EndQuestionsCollection.m; sourceTree = "<group>"; };
-		1567A6901AAE1F910046B26C /* Questions.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Questions.txt; sourceTree = "<group>"; };
 		1567A6921AAE49FD0046B26C /* QuestionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionsViewController.h; sourceTree = "<group>"; };
 		1567A6931AAE49FD0046B26C /* QuestionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionsViewController.m; sourceTree = "<group>"; };
 		1567A6951AAE61010046B26C /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		1567A6981AAE87FC0046B26C /* ResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsViewController.h; sourceTree = "<group>"; };
+		1567A6991AAE87FC0046B26C /* ResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsViewController.m; sourceTree = "<group>"; };
+		1567A69B1AAE88270046B26C /* GroupResultView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupResultView.h; sourceTree = "<group>"; };
+		1567A69C1AAE88270046B26C /* GroupResultView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupResultView.m; sourceTree = "<group>"; };
+		1567A69E1AAE8B790046B26C /* Indicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Indicator.h; sourceTree = "<group>"; };
+		1567A69F1AAE8B790046B26C /* Indicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Indicator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +126,6 @@
 		15531D111AAB089C009ADC38 = {
 			isa = PBXGroup;
 			children = (
-				1567A6951AAE61010046B26C /* MessageUI.framework */,
 				15531D1C1AAB089C009ADC38 /* GOB2B */,
 				15531D1B1AAB089C009ADC38 /* Products */,
 			);
@@ -142,10 +150,14 @@
 				1567A6621AABF41C0046B26C /* Keys.h */,
 				1567A66F1AAD13E10046B26C /* DataFactory.h */,
 				1567A6701AAD13E10046B26C /* DataFactory.m */,
+				1567A69B1AAE88270046B26C /* GroupResultView.h */,
+				1567A69C1AAE88270046B26C /* GroupResultView.m */,
 				15531D211AAB089C009ADC38 /* AppDelegate.h */,
 				15531D221AAB089C009ADC38 /* AppDelegate.m */,
 				15531D2A1AAB089C009ADC38 /* Images.xcassets */,
 				15531D1D1AAB089C009ADC38 /* Supporting Files */,
+				1567A69E1AAE8B790046B26C /* Indicator.h */,
+				1567A69F1AAE8B790046B26C /* Indicator.m */,
 			);
 			path = GOB2B;
 			sourceTree = "<group>";
@@ -153,6 +165,7 @@
 		15531D1D1AAB089C009ADC38 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1567A6951AAE61010046B26C /* MessageUI.framework */,
 				1567A6641AAC0ABB0046B26C /* Crashlytics.framework */,
 				15531D1E1AAB089C009ADC38 /* Info.plist */,
 				15531D1F1AAB089C009ADC38 /* main.m */,
@@ -163,7 +176,7 @@
 		15531D881AABADC8009ADC38 /* GOB2B Assest */ = {
 			isa = PBXGroup;
 			children = (
-				1567A6901AAE1F910046B26C /* Questions.txt */,
+				1561E5DF1AAF70E100BE92A3 /* Questions.txt */,
 				15531D7C1AAB166C009ADC38 /* Stairs.png */,
 				1567A6571AABB8720046B26C /* ranking.png */,
 				15531D9E1AABB305009ADC38 /* Graph.png */,
@@ -206,6 +219,8 @@
 				1567A6781AAD34360046B26C /* GOB2BQuestionViewController.m */,
 				1567A6921AAE49FD0046B26C /* QuestionsViewController.h */,
 				1567A6931AAE49FD0046B26C /* QuestionsViewController.m */,
+				1567A6981AAE87FC0046B26C /* ResultsViewController.h */,
+				1567A6991AAE87FC0046B26C /* ResultsViewController.m */,
 			);
 			name = "View Controller";
 			sourceTree = "<group>";
@@ -316,6 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				15531D951AABADC8009ADC38 /* GOB2B Stairs LOGO 2.png in Resources */,
+				1561E5E01AAF70E100BE92A3 /* Questions.txt in Resources */,
 				15531D921AABADC8009ADC38 /* GOB2B Logo (white).png in Resources */,
 				15531D2B1AAB089C009ADC38 /* Images.xcassets in Resources */,
 				15531D931AABADC8009ADC38 /* GOB2B Logo 2.png in Resources */,
@@ -326,7 +342,6 @@
 				1567A6581AABB8720046B26C /* ranking.png in Resources */,
 				15531D961AABADC8009ADC38 /* GOB2B Stairs LOGO.png in Resources */,
 				15531D941AABADC8009ADC38 /* GOB2B Logo.png in Resources */,
-				1567A6911AAE1F910046B26C /* Questions.txt in Resources */,
 				15531D7D1AAB166C009ADC38 /* Stairs.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -368,11 +383,14 @@
 				1567A6681AACF3790046B26C /* Question.m in Sources */,
 				1567A66B1AACF42F0046B26C /* Subgroup.m in Sources */,
 				1567A6871AADDA570046B26C /* OrgGoalsCollection.m in Sources */,
+				1567A69D1AAE88270046B26C /* GroupResultView.m in Sources */,
 				1567A66E1AACF43A0046B26C /* Group.m in Sources */,
 				15531D451AAB0D9C009ADC38 /* StartupViewController.m in Sources */,
 				1567A65B1AABBE370046B26C /* SignupViewController.m in Sources */,
 				1567A6791AAD34360046B26C /* GOB2BQuestionViewController.m in Sources */,
 				1567A6841AADD8CF0046B26C /* EndQuestion.m in Sources */,
+				1567A69A1AAE87FC0046B26C /* ResultsViewController.m in Sources */,
+				1567A6A01AAE8B790046B26C /* Indicator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
