@@ -63,8 +63,10 @@
     
     textView1 = [[UITextView alloc] initWithFrame:CGRectMake(60, CGRectGetMaxY(label1.frame), self.view.frame.size.width-120, 100)];
     textView1.scrollEnabled = YES;
+    textView1.text = @"Customer aquisition of 5 clients in 6 months";
     textView1.layer.borderColor = [UIColor whiteColor].CGColor;
     textView1.layer.borderWidth = 2.0f;
+    textView1.textColor = [UIColor lightGrayColor];
     textView1.delegate = self;
     textView1.font = [UIFont systemFontOfSize:14.0f];
     textView1.backgroundColor = [UIColor clearColor];
@@ -80,6 +82,8 @@
     textView2 = [[UITextView alloc] initWithFrame:CGRectMake(60, CGRectGetMaxY(label2.frame), self.view.frame.size.width-120, 100)];
     textView2.scrollEnabled = YES;
     textView2.delegate = self;
+    textView2.text = @"To boost revenue and meet shareholder expectations for Q3";
+    textView2.textColor = [UIColor lightGrayColor];
     textView2.font = [UIFont systemFontOfSize:14.0f];
     textView2.layer.borderColor = [UIColor whiteColor].CGColor;
     textView2.layer.borderWidth = 2.0f;
@@ -268,6 +272,10 @@
 }
 
 - (void)textViewDidBeginEditing:(UITextView *)textView {
+    if (textView.textColor == [UIColor lightGrayColor]) {
+        textView.text = @"";
+        textView.textColor = [UIColor blackColor];
+    }
     [scrollView setContentOffset:CGPointMake(0, CGRectGetMinY(textView.frame)-25-45) animated:YES];
 }
 

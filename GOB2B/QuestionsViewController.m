@@ -62,6 +62,8 @@
     
     textView1 = [[UITextView alloc] initWithFrame:CGRectMake(60, CGRectGetMaxY(label1.frame), self.view.frame.size.width-120, 100)];
     textView1.scrollEnabled = YES;
+    textView1.text = @"As an edtech startup I am struggling to increase secure paying customers";
+    textView1.textColor = [UIColor lightGrayColor];
     textView1.layer.borderColor = [UIColor whiteColor].CGColor;
     textView1.layer.borderWidth = 2.0f;
     textView1.delegate = self;
@@ -78,6 +80,8 @@
     
     textView2 = [[UITextView alloc] initWithFrame:CGRectMake(60, CGRectGetMaxY(label2.frame), self.view.frame.size.width-120, 100)];
     textView2.scrollEnabled = YES;
+    textView2.text = @"I have not identified why";
+    textView2.textColor = [UIColor lightGrayColor];
     textView2.font = [UIFont systemFontOfSize:14.0f];
     textView2.layer.borderColor = [UIColor whiteColor].CGColor;
     textView2.layer.borderWidth = 2.0f;
@@ -95,6 +99,8 @@
     textView3 = [[UITextView alloc] initWithFrame:CGRectMake(60, CGRectGetMaxY(label10.frame), self.view.frame.size.width-120, 100)];
     textView3.scrollEnabled = YES;
     textView3.font = [UIFont systemFontOfSize:14.0f];
+    textView3.textColor = [UIColor lightGrayColor];
+    textView3.text = @"How can I increase sales for my existing product";
     textView3.layer.borderColor = [UIColor whiteColor].CGColor;
     textView3.layer.borderWidth = 2.0f;
     textView3.delegate = self;
@@ -214,7 +220,7 @@
         {
             MFMailComposeViewController *mailViewController = [[MFMailComposeViewController alloc] init];
             mailViewController.mailComposeDelegate = self;
-            [mailViewController setToRecipients:@[@"jason@gob2b.ca"]];
+            [mailViewController setToRecipients:@[@"appserver@gob2b.ca"]];
 //            [mailViewController setToRecipients:@[@"rindopuz23@gmail.com"]];
             [mailViewController setSubject:@"GOB2B Results"];
             NSData* data = [DataFactory prepareDataForMail];
@@ -313,6 +319,10 @@
 }
 
 - (void)textViewDidBeginEditing:(UITextView *)textView {
+    if (textView.textColor == [UIColor lightGrayColor]) {
+        textView.text = @"";
+        textView.textColor = [UIColor blackColor];
+    }
     [scrollView setContentOffset:CGPointMake(0, CGRectGetMinY(textView.frame)-25-45) animated:YES];
 }
 

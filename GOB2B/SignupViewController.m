@@ -459,6 +459,11 @@
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField
 {
+    if (textField == field4) {
+        if ([textField.text isEqualToString:@""]) {
+            field4.text = @"Yes";
+        }
+    }
     [scrollView setContentOffset:CGPointMake(0, CGRectGetMinY(textField.frame) - 25 - 45) animated:YES];
 }
 
